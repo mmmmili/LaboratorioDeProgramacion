@@ -1,4 +1,3 @@
-
-public class EJ1 {
+ //public class EJ1 {
 
 }
