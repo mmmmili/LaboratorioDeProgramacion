@@ -1,5 +1,4 @@
-import TP1.Hamburguesa;
-
+package TP1;
 //clase que añade queso a la hamburguesa
 public class QuesoDecorador extends HamburguesaDecorador{
     //esta clase hereda el constructor de HamburguesaDecorador

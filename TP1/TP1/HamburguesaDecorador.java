@@ -1,5 +1,7 @@
+package TP1;
 
 //clase abstracta decorator principal
+
 public abstract class HamburguesaDecorador extends Hamburguesa{
     //el elemento que vamos a "decorar"
     protected Hamburguesa hamburguesa;
