@@ -1,14 +1,12 @@
 package TP1;
 
-public class Hamburguesa {
+public class Hamburguesa implements HamburguesaInterfaz{
     private double precio;
     private String descripcion;
 
-
     public Hamburguesa(){
-        precio =100;
-        descripcion= "una hamburguesa";
-
+        precio = 100;
+        descripcion= "2 panes y 1 carne";
     }
 
     public void setPrecio(double p){
@@ -27,10 +25,7 @@ public class Hamburguesa {
         return descripcion;
     }
 
-    
-    public void armarHamburguesa(){
-        precio = 10;
-        descripcion= "2 panes y 1 carne";
-
+    public void agregarIngrediente(Hamburguesa h){
+        
     }
 }
