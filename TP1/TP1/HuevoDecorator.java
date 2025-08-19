@@ -1,15 +1,15 @@
 package TP1;
-//clase que añade queso a la hamburguesa
-public class QuesoDecorador extends HamburguesaDecorador{
+//clase que añade huevo a la hamburguesa
+public class HuevoDecorator extends HamburguesaDecorador{
     //esta clase hereda el constructor de HamburguesaDecorador
     private double precio;
     private String descripcion;
 
-    public QuesoDecorador(Hamburguesa hamburguesa){
+    public HuevoDecorator(Hamburguesa hamburguesa){
         //inicializar el objeto hamburguesa
         super(hamburguesa);
-        precio = 50;
-        descripcion = ", queso";
+        precio = 70;
+        descripcion = ", huevo";
 
     }
     //metodo que añade queso
