@@ -29,6 +29,6 @@ public class Hamburguesa implements HamburguesaInterfaz{
         
     }
     public String toString(){
-        return "precio "+ precio+" descripcion "+ descripcion;
+        return "Precio: "+ precio +"\nDescripcion: "+ descripcion;
     }
 }

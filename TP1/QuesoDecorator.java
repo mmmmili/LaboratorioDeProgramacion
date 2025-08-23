@@ -3,7 +3,7 @@ package TP1;
 public class QuesoDecorator extends HamburguesaDecorador{
     //esta clase hereda el constructor de HamburguesaDecorador
     private double precio = 11;
-    private String descripcion = " queso ";
+    private String descripcion = ", queso ";
 
     public QuesoDecorator(Hamburguesa hamburguesa){
         //inicializar el objeto hamburguesa
