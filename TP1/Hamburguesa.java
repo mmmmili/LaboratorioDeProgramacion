@@ -28,4 +28,7 @@ public class Hamburguesa implements HamburguesaInterfaz{
     public void agregarIngrediente(Hamburguesa h){
         
     }
+    public String toString(){
+        return "precio "+ precio+" descripcion "+ descripcion;
+    }
 }
