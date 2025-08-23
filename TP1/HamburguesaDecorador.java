@@ -26,4 +26,8 @@ public abstract class HamburguesaDecorador implements HamburguesaInterfaz{
     public String getDescripcion(){
         return hamburguesa.getDescripcion();
     }
+
+    public String toString(){
+        return hamburguesa.toString();
+    }
 }

@@ -2,18 +2,14 @@ package TP1;
 //clase que añade jamon a la hamburguesa
 public class JamonDecorator extends HamburguesaDecorador{
     //esta clase hereda el constructor de HamburguesaDecorador
-    private double precio;
-    private String descripcion;
+    private double precio= 15;
+    private String descripcion = " jamon ";
 
     public JamonDecorator(Hamburguesa hamburguesa){
         //inicializar el objeto hamburguesa
         super(hamburguesa);
-        precio = 60;
-        descripcion = ", jamon";
-
-    }
-    //metodo que añade queso
-    public void agregarIngrediente(Hamburguesa h){
+        hamburguesa.setPrecio(precio);
+        hamburguesa.setDescripcion(descripcion);
 
     }
     public void setPrecio(double p){
