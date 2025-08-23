@@ -5,4 +5,5 @@ public interface HamburguesaInterfaz {
     public void setDescripcion(String d);
     public double getPrecio();
     public String getDescripcion();
+    public String toString();
 }
