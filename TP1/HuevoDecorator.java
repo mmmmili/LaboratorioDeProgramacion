@@ -1,23 +1,22 @@
 package TP1;
 //clase que añade huevo a la hamburguesa
-public class HuevoDecorator extends HamburguesaDecorador{
+public class HuevoDecorator extends HamburguesaDecorator{
     //esta clase hereda el constructor de HamburguesaDecorador
     private double precio = 30;
-    private String descripcion = ", huevo ";
+    private String descripcion = ", huevo";
 
     public HuevoDecorator(Hamburguesa hamburguesa){
         //inicializar el objeto hamburguesa
         super(hamburguesa);
-        hamburguesa.setPrecio(precio);
+        hamburguesa.aumentarPrecio(precio);
         hamburguesa.setDescripcion(descripcion);
-
     }
 
-    public void setPrecio(double p){
-
+    public void aumentarPrecio(double p){
+        hamburguesa.aumentarPrecio(p);
     }
     public void setDescripcion(String d){
-
+        hamburguesa.setDescripcion(d);
     }
     public double getPrecio(){
         return hamburguesa.getPrecio() + precio;

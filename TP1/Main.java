@@ -1,11 +1,19 @@
 package TP1;
 
+import java.util.concurrent.*;
+
 public class Main {
     public static void main(String[] args) {
-        HamburguesaInterfaz hambur = new PancetaDecorator((new Hamburguesa()));
-        System.out.println(hambur.toString());
-        //esta verga no anda dios sabra porque
-        //link del video del que nos estabamos basando: 
-        // https://www.youtube.com/watch?v=j40kRwSm4VE
+        //creamos 3 hamburgueseros
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+        while(true){
+            Future<Hamburguesa> futuraHamburguesa = executor.submit(new HacerHamburguesa());
+            try {
+                System.out.println(futuraHamburguesa.get().toString());
+                Thread.sleep(3000);
+            } catch (Exception e) {
+                System.out.println("Excepcion!");
+            }
+        }
     }
 }
