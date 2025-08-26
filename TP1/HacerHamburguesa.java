@@ -3,6 +3,12 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 
 public class HacerHamburguesa implements Callable<Hamburguesa>{
+    private int tiempo;
+
+    public HacerHamburguesa(int t){
+        tiempo = t;
+    }
+
     public Hamburguesa call(){
         Random rand = new Random();
         int num = rand.nextInt(4);
@@ -23,20 +29,14 @@ public class HacerHamburguesa implements Callable<Hamburguesa>{
             default:
                 break;
         }
-        //num = rand.nextInt(3000)+1000;
-        
         try {
-            if (Thread.currentThread().getName().equals("pool-1-thread-1")) {
-                //System.out.println("El hilo 1 es medio lento...");
-                //Thread.yield();
-                Thread.sleep(5000);
-            }else{
-                Thread.sleep(2000); // simulacion de cocina
-            }
+            Thread.sleep(tiempo);
         } catch (Exception e) {
             // TODO: handle exception
         }
-        System.out.println(Thread.currentThread().getName() + " hizo esta hamburguesa");
+        
+        System.out.println(Thread.currentThread().getName() + " hizo esta hamburguesa:");
+        //System.out.println(hamburguesita.toString());
         return hamburguesita;
     }
 }
