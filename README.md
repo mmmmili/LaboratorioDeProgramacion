@@ -5,3 +5,5 @@
 3. Milagros Ruiz [FAI-4564]
 
 ### TP 1: Patron Decorator / Executor Service + Callable
+
+### TP 2: Web estática / Front end
