@@ -1,0 +1,13 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.eventopiola{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
