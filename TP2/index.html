@@ -14,7 +14,15 @@
     <main>
         <div class = "eventopiola">
             <h2>Evento destacado de la semana!!!</h2>
-        <img src = "images/jodita.jpeg">
+        <img src = "images/jodita.jpeg" usemap="#destacado">
+        <map name = "destacado">
+            <area shape="rect" coords="0,0,1000,1000" href="evento.html" onclick="funcionEvento()">
+        </map>
+        <script>
+            function funcionEvento(){
+                alert("Se accede al evento destacado!");
+            }
+        </script>
     </div>
     <div>
         <h3>Cachengue</h3>
