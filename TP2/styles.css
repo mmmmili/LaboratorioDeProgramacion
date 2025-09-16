@@ -13,25 +13,32 @@ main{
 }
 
 header{
-    background-color:beige;
+    background-color:mintcream ;
     padding: 1px ;
     /* position: sticky; */
  
 }
 
 header h1{
-    color: darkgrey;
+    color: black;
 
+}
+
+nav  {
+    display: flex;
+    justify-content: space-between; /* separa h1 a la izq y lo otro a la derecha */
+    align-items: center; /* alinea verticalmente */
+    padding: 10px;  
+   
 }
 
 nav ul{
-    /* .. */
+    display: flex;
+    list-style: none; /* saca los puntitos */
+    gap: 20px; /* espacio entre los items */
 }
 
 nav a {
-    color: white;
-
-    text-decoration: none;
-
-
+    color: black;
+    text-decoration: none; /* le saca el subrayado */
 }
