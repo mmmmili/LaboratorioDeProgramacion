@@ -1,13 +1,34 @@
 *{
     margin : 0;
     padding : 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.eventopiola{
-    font-family: 'Courier New', Courier, monospace;
+main{
+    text-align: center;
+}
+
+header{
+    background-color:beige;
+    padding: 1px ;
+    /* position: sticky; */
+ 
+}
+
+header h1{
+    color: darkgrey;
+
+}
+
+nav ul{
+    /* .. */
+}
+
+nav a {
     color: white;
+    text-decoration: none;
 }
