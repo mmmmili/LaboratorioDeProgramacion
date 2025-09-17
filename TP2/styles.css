@@ -28,12 +28,12 @@ header{
 
 header h1{
     color: black;
-
 }
 
 nav  {
     display: flex;
-    justify-content: space-between; /* separa h1 a la izq y lo otro a la derecha */
+    justify-content: space-between; /* separa h1 a la izq y lo otro a la derecha, 
+    si usara flex-end me tira todo a la derecha*/
     align-items: center; /* alinea verticalmente */
     padding: 10px;  
    
