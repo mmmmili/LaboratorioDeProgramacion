@@ -9,7 +9,14 @@ body{
 }
 
 main{
-    text-align: center;
+    text-align: center;                 /* color y grosor del borde */
+    border: 2px solid #333;           /* esquinas redondeadas */
+    border-radius: 10px;                /* espacio interno */
+    padding: 20px;                      /* espacio interno */
+    margin: 20px auto;                  /* separación del resto */
+    max-width: 600px;                   /* ancho máximo del recuadro */
+    background-color: #fdecda;        /* color del fondo */
+
 }
 
 header{
