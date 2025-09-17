@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El mejor grupo</title>
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,500&display=swap"
-    rel="stylesheet">
-    <link rel = "stylesheet" href="styles.css">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body >
+
+<body>
     <header>
         <nav>
             <h1>miljoditas</h1>
@@ -21,40 +23,42 @@
 
             </ul>
         </nav>
-        
+
     </header>
     <main>
-        <section  >
-            <h2>Bienvenido a ...</h2>
-            <p>Descubre eventos facilmente</p>
-        </section>
-        <div class = "eventopiola">
-        <img src = "images/jodita.jpeg" usemap="#destacado">
-        <map name = "destacado">
-            <area shape="rect" coords="0,0,1000,1000" href="evento.html" onclick="funcionEvento()">
-        </map>
-        <script>
-            function funcionEvento(){
-                alert("Se accede al evento destacado!");
-            }
-        </script>
-    </div>
 
-    <div>
-        <h3>Cachengue</h3>
-        <img src = "images/kiwi.jpeg">
-    </div>
-    <div>
-        <h3>Tecno</h3>
-        <img src = "images/vision.jpeg">
-    </div>
-    <div>
-        <h3>RKT</h3>
-        <img src = "images/caserio2.jpeg">
-    </div>
+        <section class="cartelera">
+            <h2>Eventos Destacados</h2>
+            <div class="eventosdestacados">
+                <img src="images/jodita.jpeg" usemap="#destacado">
+                <map name="destacado">
+                    <area shape="rect" coords="0,0,1000,1000" href="evento.html" onclick="funcionEvento()">
+                </map>
+                <script>
+                    function funcionEvento() {
+                        alert("Se accede al evento destacado!");
+                    }
+                </script>
+             </div>
+        </section>
+       
+
+        <div>
+            <h3>Cachengue</h3>
+            <img src="images/kiwi.jpeg">
+        </div>
+        <div>
+            <h3>Tecno</h3>
+            <img src="images/vision.jpeg">
+        </div>
+        <div>
+            <h3>RKT</h3>
+            <img src="images/caserio2.jpeg">
+        </div>
     </main>
     <footer>
         <h4>Todos los derechos reservados!!!</h4>
     </footer>
 </body>
+
 </html>
