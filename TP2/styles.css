@@ -12,6 +12,8 @@ main{
     text-align: center;
 }
 
+/* NAV */
+
 header{
     background-color:mintcream ;
     padding: 1px ;
@@ -41,4 +43,24 @@ nav ul{
 nav a {
     color: black;
     text-decoration: none; /* le saca el subrayado */
+}
+
+/* CARTELERA */
+
+
+.cartelera{
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedorcartelera{
+    position: relative;
+    display: flex;
+    /*     align-items: center; */
+    margin: auto; /* centra en la pagina */
+}
+
+.evento{
+    max-width: 100%;
+    box-sizing: border-box;
 }
