@@ -15,7 +15,10 @@
 <body>
     <header>
         <nav>
-            <h1>miljoditas</h1>
+            <a href="index.html">
+                <h1 class="tituloHeader">miljoditas</h1>
+            </a>
+            
             <ul>
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Eventos</a></li>
@@ -28,43 +31,41 @@
     </header>
     <main>
 
-        <section class="cartelera">
-            <h2>Eventos Destacados</h2>
-            <div class="contenedorcartelera">
-                <div class="imagencartelera">
-                    <img src="images/jodita.jpeg" usemap="#destacado">
-                    <!--                 <map name="destacado">
-                    <area shape="rect" coords="0,0,1000,1000" href="evento.html" onclick="funcionEvento()">
-                    </map>
-                    <script>
-                    function funcionEvento() {
-                        alert("Se accede al evento destacado!");
-                    }
-                     </script> -->
-                </div>
+        <section class="carrousel">
+       <!--      <h2>Eventos Destacados</h2> -->
+            <div class="grande">
+                    <img src="images/ppal.jpg" usemap="#destacado" class="img" >
+                    <img src="images/jodita.jpg" usemap="#destacado" class="img" >
             </div>
+            <ul class="puntos">
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
         </section>
 
-
-    <div>
-        <h3>Cachengue</h3>
-        <a href="evento.html?id=kiwi">
-        <img src = "images/kiwi.jpeg">
-       </a >
-    </div>
-    <div>
-        <h3>Tecno</h3>
-        <a href="evento.html?id=tecno">
-        <img src = "images/vision.jpeg">
-    </div>
-    <div>
-        <h3>RKT</h3>
-        <a href="evento.html?id=rkt">
-        <img src = "images/caserio2.jpeg">
-    </div>
+        <section class="cont-eventos">
+        <div class="cont-evento">
+            <h3>Cachengue</h3>
+            <a href="evento.html?id=kiwi">
+                <img src="images/kiwi.jpeg"class="img-eventos">
+            </a>
+        </div>
+        <div class="cont-evento">
+            <h3>Tecno</h3>
+            <a href="evento.html?id=tecno">
+                <img src="images/vision.jpeg" class="img-eventos">
+            </a>
+        </div>
+        <div class="cont-evento">
+            <h3>rkt</h3>
+            <a href="evento.html?id=rkt">
+                <img src="images/caserio2.jpeg"class="img-eventos">
+            </a>
+        </div>
+    </section>
     </main>
     <footer>
-        <h4>Todos los derechos reservados</h4>
+        <h5>2025</h5>
     </footer>
     <script src="script.js"></script>
 </body>

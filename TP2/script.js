@@ -37,7 +37,7 @@ const eventos = {
   if(evento){
     document.getElementById("infoevento").innerHTML = `
         <h1>${evento.titulo}</h1>
-        <img src="${evento.img}" alt="${evento.titulo}">
+        <img src="${evento.img}" alt="${evento.titulo}" class="img">
         <h3><a href="${evento.ubicacion}">Lugar: ${evento.lugar}</a></h3>
         <p>Hora de apertura: ${evento.apertura}</p>
         <p>Hora de cierre: ${evento.cierre}</p>
@@ -45,3 +45,12 @@ const eventos = {
     `;
     document.title = evento.titulo;
   }
+
+ /*  <!--                 <map name="destacado">
+  <area shape="rect" coords="0,0,1000,1000" href="evento.html" onclick="funcionEvento()">
+  </map>
+  <script>
+  function funcionEvento() {
+      alert("Se accede al evento destacado!");
+  }
+   </script> --> */
