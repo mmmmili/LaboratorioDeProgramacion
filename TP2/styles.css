@@ -14,11 +14,8 @@ main{
     /* border: 2px solid #333;   */         /* esquinas redondeadas */
    /*  border-radius: 10px;    */             /* espacio interno */
     padding: 20px;     
-    min-height: 800px;                 /* espacio interno */
-   /*  margin: 20px auto;     */              /* separación del resto */
-                 /* ancho máximo del recuadro */
-        /* color del fondo */
-
+    min-height: 700px;                 /* espacio interno */
+    margin-top: 30px;
 }
 
 /* NAV */
@@ -32,21 +29,29 @@ header{
 
 header h1{
     color: black;
+    margin-left: 20px;
 }
 
 nav  {
     display: flex;
-    justify-content: space-between; /* separa h1 a la izq y lo otro a la derecha, 
-    si usara flex-end me tira todo a la derecha*/
+    justify-content: space-between; /* separa h1 a la izq y lo otro a la derecha,   si usara flex-end me tira todo a la derecha*/
     align-items: center; /* alinea verticalmente */
     padding: 10px;  
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    border-bottom: 0.7px solid #ccccccc9;
+
+    z-index: 1000;
   
 }
 
 nav ul{
     display: flex;
     list-style: none; /* saca los puntitos */
-    gap: 20px; /* espacio entre los items */
+    gap: 25px; /* espacio entre los items */
+    margin-right: 10px;
 }
 
 nav a {
@@ -94,7 +99,9 @@ nav a {
     /* width: calc(100%/2); */
     border-radius: 10px;
     max-height:650px;
+   
 }
+
 
 .carrousel .puntos{
     width: 100%;
@@ -138,10 +145,20 @@ nav a {
 
 }
 
+
 .img-eventos{
     border-radius: 10px;
     width: 230px;
     height: 210px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.img-eventos:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 .input-ciudad{
     padding: 10px;
@@ -157,4 +174,11 @@ footer{
     text-align: center;
     border-top: 2px solid #ccccccc9;
     padding: 20px;
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer  p{
+    padding-right: 10px;
 }
