@@ -165,6 +165,17 @@ a {
     
 }
 
+.img-eventoGrande{
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+    
+}
+
 .img-eventos:hover{
     transform: scale(1.05);
     cursor: pointer;

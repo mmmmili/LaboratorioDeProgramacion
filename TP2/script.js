@@ -157,7 +157,7 @@ const evento = eventos[id];
 if (evento) {
     document.getElementById("infoevento").innerHTML = `
         <h1>${evento.titulo}</h1>
-        <img src="${evento.img}" alt="${evento.titulo}" class="img">
+        <img src="${evento.img}"  alt="${evento.titulo}" class="img-eventoGrande">
         <h3><p> Lugar: <a href="${evento.ubicacion}"> ${evento.lugar}</a></p></h3>
         <p>Hora de apertura: ${evento.apertura}</p>
         <p>Hora de cierre: ${evento.cierre}</p>
