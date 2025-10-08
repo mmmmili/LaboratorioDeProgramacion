@@ -153,7 +153,7 @@ a {
     margin-bottom: 10px;                  /* separación del resto */
     max-width: auto;                   /* ancho máximo del recuadro */
     background-color: #fdecda;        /* color del fondo */
-    width:850px;                        /*totalmente hardcodeado, VER!!!!*/
+    width:78%;                        /*totalmente hardcodeado, VER!!!!*/
     height: auto;
     float:right;
 }
@@ -164,9 +164,9 @@ a {
     border-radius: 10px;                /* espacio interno */
     max-width: auto;                   /* ancho máximo del recuadro */
     background-color: #fdecda;        /* color del fondo */
-    width:850px;                        /*totalmente hardcodeado, VER!!!!*/
+    width:78%;                        /*totalmente hardcodeado, VER!!!!*/
     height: auto;
-    float:right;
+    float: right;
 }
 
 .eventosparticulares .img{
