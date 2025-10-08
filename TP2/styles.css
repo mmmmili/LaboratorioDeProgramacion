@@ -153,7 +153,7 @@ a {
     margin-bottom: 10px;                  /* separación del resto */
     max-width: auto;                   /* ancho máximo del recuadro */
     background-color: #fdecda;        /* color del fondo */
-    width:78%;                        /*totalmente hardcodeado, VER!!!!*/
+    width:77%;                        /*totalmente hardcodeado, VER!!!!*/
     height: auto;
     float:right;
 }
@@ -161,12 +161,16 @@ a {
 .rect-iframe{
     text-align: center;                 /* alinear el texto*/
     border: 2px solid #333;           /* esquinas redondeadas */
-    border-radius: 10px;                /* espacio interno */
+    border-radius: 15px;                /* espacio interno */
     max-width: auto;                   /* ancho máximo del recuadro */
     background-color: #fdecda;        /* color del fondo */
-    width:78%;                        /*totalmente hardcodeado, VER!!!!*/
+    width:77%;                        /*totalmente hardcodeado, VER!!!!*/
     height: auto;
     float: right;
+}
+
+.eventosparticulares{
+    margin-bottom: 10px;
 }
 
 .eventosparticulares .img{
@@ -192,7 +196,6 @@ a {
     object-fit: cover;
     object-position: center;
     float: left;
-    
 }
 
 .img-eventos:hover{
