@@ -146,6 +146,7 @@ a {
 }
 
 .rect{
+    display:flex;
     text-align: center;                 /* alinear el texto*/
     border: 2px solid #333;           /* esquinas redondeadas */
     border-radius: 10px;                /* espacio interno */
@@ -153,12 +154,12 @@ a {
     margin-bottom: 10px;                  /* separación del resto */
     max-width: auto;                   /* ancho máximo del recuadro */
     background-color: #fdecda;        /* color del fondo */
-    width:77%;                        /*totalmente hardcodeado, VER!!!!*/
     height: auto;
     float:right;
 }
 
 .rect-iframe{
+    display: flex;
     text-align: center;                 /* alinear el texto*/
     border: 2px solid #333;           /* esquinas redondeadas */
     border-radius: 15px;                /* espacio interno */
@@ -170,13 +171,22 @@ a {
 }
 
 .eventosparticulares{
-    margin-bottom: 10px;
+    /* Container general para el evento particular */
+    display: flex;
 }
 
-.eventosparticulares .img{
-    border-radius: 20px;
+.col1{
+    flex:1;
 }
 
+.col2{
+    flex:2;
+    flex-direction: row;
+}
+
+.row1{
+    
+}
 
 .img-eventos{
     border-radius: 10px;

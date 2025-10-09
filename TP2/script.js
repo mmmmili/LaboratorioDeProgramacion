@@ -156,21 +156,27 @@ const eventos = {
 const evento = eventos[id];
 /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
 if (evento) {
-    document.getElementById("infoevento").innerHTML = `
+    document.getElementById("infoevento").innerHTML = `        
         <h1 class = "evento-particular">
             <p>${evento.titulo}</p>
         </h1>
-        <img src="${evento.img}"  alt="${evento.titulo}" class="img-eventoGrande">
-        <h3 class = "rect"> 
-            <p> Lugar: ${evento.lugar}</a></p>
-        </h3>
-        <h3 class = "rect"> 
-            <p>Apertura: ${evento.apertura} | Cierre: ${evento.cierre}</p>
-        </h3>
-        <h3 class = "rect"> 
-            <a href="${evento.contacto}" target="_blank">Contacto</a>
-        </h3>
-        <iframe class = "rect-iframe" src=${evento.url} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class = "eventosparticulares">
+            <div class = "col1">
+                <img src="${evento.img}"  alt="${evento.titulo}" class="img-eventoGrande">
+            </div>
+            <div class = "col2">
+                <h3 class = "rect"> 
+                    <p> Lugar: ${evento.lugar}</a></p>
+                </h3>
+                <h3 class = "rect"> 
+                    <p>Apertura: ${evento.apertura} | Cierre: ${evento.cierre}</p>
+                </h3>
+                <h3 class = "rect"> 
+                    <a href="${evento.contacto}" target="_blank">Contacto</a>
+                </h3>
+                <iframe class = "rect-iframe" src=${evento.url} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+        </div>
     `;
     document.title = evento.titulo;
 }
