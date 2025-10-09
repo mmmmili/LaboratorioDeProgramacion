@@ -13,6 +13,7 @@ const eventos = {
         ubicacion: "https://maps.app.goo.gl/HFv7RjbetbU9fR1CA",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
     },
+    
     tuki: {
         titulo: "TUKI Halloween Old School",
         img: "images/tuki.jpg",
@@ -165,16 +166,18 @@ if (evento) {
                 <img src="${evento.img}"  alt="${evento.titulo}" class="img-eventoGrande">
             </div>
             <div class = "col2">
-                <h3 class = "rect"> 
+                <div class = "row1 rect">
                     <p> Lugar: ${evento.lugar}</a></p>
-                </h3>
-                <h3 class = "rect"> 
-                    <p>Apertura: ${evento.apertura} | Cierre: ${evento.cierre}</p>
-                </h3>
-                <h3 class = "rect"> 
-                    <a href="${evento.contacto}" target="_blank">Contacto</a>
-                </h3>
-                <iframe class = "rect-iframe" src=${evento.url} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class = "row2 rect"> 
+                        <p>Apertura: ${evento.apertura} | Cierre: ${evento.cierre}</p>
+                </div>
+                <div class = "row3 rect"> 
+                        <a href="${evento.contacto}" target="_blank">Contacto</a>
+                </div>
+                <div class = "row4 ">
+                    <iframe class = "rect iframe" src=${evento.url} width = "100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             <div>
         </div>
     `;
