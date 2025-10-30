@@ -249,3 +249,19 @@ footer{
 footer  p{
     padding-right: 10px;
 }
+
+/* LOGIN */
+.form{
+    text-align: center;
+    font-size: large;
+    width: auto;
+}
+
+.input{
+    margin:10px;
+    font-size: 22px;
+}
+
+.button-input{
+    font-size: 22px;
+}
