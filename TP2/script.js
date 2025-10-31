@@ -46,7 +46,60 @@ if (evento) {
     document.title = evento.titulo;
 }
 
+
+const inputCiudad = document.getElementById("input-ciudad"); // agarro el input
+const resultados = document.getElementById("result-busqueda"); // agarro el ul de resultados
+
+const funcionBusqueda = () => {
+    const filtro = inputCiudad.value.toLowerCase(); // a minuscula el input
+    resultados.innerHTML = "";
+
+    if(filtro.trim() != "") {
+    const filtrados = Object.values(eventos).filter(evento =>
+        removerAcentos(evento.ciudad).toLowerCase().startsWith(removerAcentos(filtro))
+    );
+
+    const ciudadesUnicas = [...new Set(filtrados.map(evento => evento.ciudad))]; //elimino repetidos
+
+    ciudadesUnicas.forEach(ciudad => {
+        const li = document.createElement("li");
+        li.textContent = ciudad;
+        li.classList.add("resultado-list");
+        resultados.appendChild(li);
+    });
+
+    li.addEventListener("click",() => {
+        inputCiudad.value = ciudad;
+        resultados.innerHTML = "";
+
+        eventos.forEach(evento => {
+            if(evento.ciudad === ciudad) {
+                evento.style.display = "block";
+            } else {
+                evento.style.display = "none";
+            }
+        })
+    })
+}
+}
+
+
+inputCiudad.addEventListener("input", funcionBusqueda);
+
+
+function removerAcentos(cadena) {
+    return cadena
+      .normalize('NFD') // Descompone los caracteres en base y marca diacrítica
+      .replace(/[\u0300-\u036f]/g, ''); // Elimina las marcas diacríticas
+}
+
 function toggler(){
     var x = document.getElementById("password");
     (x.type === "password") ? x.type= "text" : x.type = "password";
 }
+refs/remotes/origin/main
+
+
+
+
+/* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */

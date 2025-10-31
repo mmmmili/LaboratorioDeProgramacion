@@ -60,6 +60,8 @@ a {
     color: black;
 
 }
+
+
 /* CARTELERA */
 
 
@@ -226,13 +228,56 @@ a {
     transform: scale(1.05);
     cursor: pointer;
 }
-.input-ciudad{
+/* contenedor principal centrado */
+.seccion-ubicacion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontalmente */
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* input */
+  #input-ciudad {
+    width: 300px;
     padding: 10px;
-    border-radius: 5px;
     border: 1px solid #ccc;
-    width: 200px;
-    margin-bottom: 20px;
-}
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* resultados */
+  #result-busqueda {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 300px; 
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 100%; /* justo abajo del input */
+    left: 50%;
+    transform: translateX(-50%); /* centrado resp al input */
+    z-index: 100;
+  }
+  
+  /* items */
+  .resultado-list{
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: background 0.2s ease;
+  }
+  
+  .resultado-list:hover {
+    background-color: #eee;
+  }
+  
 /* FOOTER */
 
 footer{
@@ -248,6 +293,7 @@ footer{
 footer  p{
     padding-right: 10px;
 }
+
 
 /* LOGIN */
 .input-div{
@@ -277,3 +323,4 @@ footer  p{
     left: 96%;
     cursor: pointer;
 }
+/*refs/remotes/origin/main*/
