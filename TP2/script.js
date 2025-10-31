@@ -11,6 +11,7 @@ const eventos = {
         cierre: "07:00hs",
         contacto: "https://www.instagram.com/fiesta_kiwi/",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
+        ciudad: "Neuquén",
     },
     
     tuki: {
@@ -21,6 +22,7 @@ const eventos = {
         cierre: "06:00hs",
         contacto: "https://instagram.com/moodliveok",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
+        ciudad: "Buenos Aires",
     },
     bresh: {
         titulo: "BRESH",
@@ -30,6 +32,7 @@ const eventos = {
         cierre: "06:00hs",
         contacto: "https://instagram.com/bresh",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.674307862607!2d-68.1380886!3d-38.9542683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333579b9b721%3A0xb25a8725a0874a24!2sEspacio%20Duam!5e0!3m2!1ses!2sar!4v1760044955380!5m2!1ses!2sar",
+        ciudad: "Cordoba Capital",
     },
     summer: {
         titulo: "Summer",
@@ -39,6 +42,7 @@ const eventos = {
         cierre: "06:00hs",
         contacto: "https://instagram.com/summerfest",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.674307862607!2d-68.1380886!3d-38.9542683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333579b9b721%3A0xb25a8725a0874a24!2sEspacio%20Duam!5e0!3m2!1ses!2sar!4v1760044955380!5m2!1ses!2sar",
+        ciudad: "Santa Cruz",
     },
     tulum: {
         titulo: "Slay",
@@ -48,6 +52,7 @@ const eventos = {
         cierre: "07:00hs",
         contacto: "https://instagram.com/tulumbarok",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.8704538165!2d-68.06197209999999!3d-38.949787799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a3300645c25d1%3A0x4879de12bb99adb0!2stulum!5e0!3m2!1ses!2sar!4v1760045029466!5m2!1ses!2sar",
+        ciudad: "Neuquén",
     },
     /*------- TECNO -------- */
     tecno: {
@@ -58,7 +63,7 @@ const eventos = {
         cierre: "06:00hs",
         contacto: "https://instagram.com/vision.festival",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
-
+        ciudad: "Cipolletti",
     },
     tecno2: {
         titulo: "Vision - Kevin Di Serna + Maxi Degrassi",
@@ -68,6 +73,7 @@ const eventos = {
         cierre: "08:00hs",
         contacto: "https://instagram.com/vision.festival",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
+        ciudad: "Mendoza",
     },
     tecno3: {
         titulo: "Vision - Fideles + Lion + Farizano",
@@ -77,6 +83,7 @@ const eventos = {
         cierre: "08:00hs",
         contacto: "https://instagram.com/vision.festival",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
+        ciudad: "Cordoba Capital",
     },
     tecno4: {
         titulo: "Vision - Simon Vuarambon (Extended Set) + Doyel",
@@ -86,6 +93,7 @@ const eventos = {
         cierre: "08:00hs",
         contacto: "https://instagram.com/vision.festival",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
+        ciudad: "Neuquén",
     },
     vision2: {
         titulo: "Primavera Vision",
@@ -95,6 +103,7 @@ const eventos = {
         cierre: "08:00hs",
         contacto: "https://instagram.com/vision.festival",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
+        ciudad: "Cordoba Capital",
     },
     /*--------- RKT --------- */
     rkt: {
@@ -105,6 +114,7 @@ const eventos = {
         cierre: "08:00hs",
         contacto: "https://instagram.com/rktfiesta",
         url: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6205.27475851252!2d-68.0529558!3d-38.9551118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462cc3157%3A0x51e8005c84277f11!2sIndependencia%20428%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1760044851950!5m2!1ses!2sar",
+        ciudad: "Neuquén",
     },
     caserio: {
         titulo: "El Caserío Club",
@@ -114,6 +124,7 @@ const eventos = {
         cierre: "08:00hs",
         contacto: "https://instagram.com/elcaserioclub",
         url: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6205.27475851252!2d-68.0529558!3d-38.9551118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462cc3157%3A0x51e8005c84277f11!2sIndependencia%20428%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1760044851950!5m2!1ses!2sar",
+        ciudad: "Buenos Aires",
     },
     wasabi: {
         titulo: "Wasabi Neuquén",
@@ -123,6 +134,7 @@ const eventos = {
         cierre: "06:00hs",
         contacto: "https://instagram.com/moodliveok",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
+        ciudad: "Centenario",
     },
     modoRkt: {
         titulo: "Modo RKT",
@@ -132,6 +144,7 @@ const eventos = {
         cierre: "06:00hs",
         contacto: "https://instagram.com/modorkt",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
+        ciudad: "Plottier",
     },
     caserio2: {
         titulo: "El Caserío Club - DJs Invitados",
@@ -141,6 +154,7 @@ const eventos = {
         cierre: "08:00hs",
         contacto: "https://instagram.com/elcaserioclub",
         url: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6205.27475851252!2d-68.0529558!3d-38.9551118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462cc3157%3A0x51e8005c84277f11!2sIndependencia%20428%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1760044851950!5m2!1ses!2sar",
+        ciudad: "Cordoba Capital",
     },
     rktNight: {
         titulo: "RKT Night",
@@ -150,6 +164,7 @@ const eventos = {
         cierre: "03:00hs",
         contacto: "https://instagram.com/moodliveok",
         url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
+        ciudad: "San Martin de los Andes",
     },
 };
 
@@ -182,3 +197,49 @@ if (evento) {
     `;
     document.title = evento.titulo;
 }
+
+const inputCiudad = document.getElementById("input-ciudad"); // agarro el input
+const resultados = document.getElementById("result-busqueda"); // agarro el ul de resultados
+
+const funcionBusqueda = () => {
+    const filtro = inputCiudad.value.toLowerCase(); // a minuscula el input
+    resultados.innerHTML = "";
+
+    if(filtro.trim() != "") {
+    const filtrados = Object.values(eventos).filter(evento =>
+        removerAcentos(evento.ciudad).toLowerCase().startsWith(removerAcentos(filtro))
+      );
+
+    const ciudadesUnicas = [...new Set(filtrados.map(evento => evento.ciudad))]; //elimino repetidos
+
+    ciudadesUnicas.forEach(ciudad => {
+        const li = document.createElement("li");
+        li.textContent = ciudad;
+        li.classList.add("resultado-list");
+        resultados.appendChild(li);
+    });
+
+    li.addEventListener("click",() => {
+        inputCiudad.value = ciudad;
+        resultados.innerHTML = "";
+
+        eventos.forEach(evento => {
+            if(evento.ciudad === ciudad) {
+                evento.style.display = "block";
+            } else {
+                evento.style.display = "none";
+            }
+        })
+    })
+}
+}
+
+
+inputCiudad.addEventListener("input", funcionBusqueda);
+
+
+function removerAcentos(cadena) {
+    return cadena
+      .normalize('NFD') // Descompone los caracteres en base y marca diacrítica
+      .replace(/[\u0300-\u036f]/g, ''); // Elimina las marcas diacríticas
+  }
