@@ -2,15 +2,6 @@ const param = new URLSearchParams(window.location.search);
 const id = param.get("id_evento");
 
 let eventos = [];
-/*
-Esta totalmente roto, no termino de entender que hay que hacer o que falta
-se supone que el evento.json se levanta desde express.js, y que queda accesible
-para fetchearla desde cualquier lado. entonces el fetch como devuelve promesas no se puede 
-acceder desde afuera y se tiene que hacer con un método que se invoca cuando termina de
-cargar el json en memoria local, pero ya definitivamente no entiendo que pasa o por que
-
-suerte debuggeando esto :D
-*/
 
 fetch('./eventos.json')
     .then(response => {
@@ -26,16 +17,10 @@ fetch('./eventos.json')
 /*const evento = eventos[id_evento];*/
 
 function loadedEvents(){
-    const evento = eventos.find(obj => obk.id_evento === id);
-        
+    console.log(eventos);
+    const evento = eventos.eventos.find((obj) => obj.id_evento === id);
+    
     /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
-    if(1){
-        document.getElementById("infoevento").innerHTML = `        
-            <h1 class = "evento-particular">
-                <p>${hola}</p>
-            </h1>
-            `;
-    }
     if (evento) {
         document.getElementById("infoevento").innerHTML = `        
             <h1 class = "evento-particular">

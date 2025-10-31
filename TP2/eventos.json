@@ -11,6 +11,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "t1",
         "titulo": "TUKI Halloween Old School",
         "img": "images/tuki.jpg",
         "lugar": "MOOD ",
@@ -21,6 +22,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "b1",
         "titulo": "BRESH",
         "img": "images/breshita.jpg",
         "lugar": "Espacio Duam ",
@@ -28,9 +30,10 @@
         "cierre": "06:00hs",
         "contacto": "https://instagram.com/bresh",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.674307862607!2d-68.1380886!3d-38.9542683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333579b9b721%3A0xb25a8725a0874a24!2sEspacio%20Duam!5e0!3m2!1ses!2sar!4v1760044955380!5m2!1ses!2sar",
-         "ciudad": "Neuquén"
+        "ciudad": "Neuquén"
     },
     {
+        "id_evento": "s1",
         "titulo": "Summer",
         "img": "images/cachengue.jpg",
         "lugar": "Espacio Duam ",
@@ -41,6 +44,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "s2",
         "titulo": "Slay",
         "img": "images/cachengue2.jpg",
         "lugar": "TULUM CLUB ",
@@ -51,6 +55,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "m1",
         "titulo": "Moritz Hofbauer + Malena Narvay",
         "img": "images/vision.jpeg",
         "lugar": "Finca la Nonnina",
@@ -61,6 +66,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "v1",
         "titulo": "Vision - Kevin Di Serna + Maxi Degrassi",
         "img": "images/tec2.jpg",
         "lugar": "Finca la Nonnina ",
@@ -71,6 +77,7 @@
         "ciudad": "Neuquén"
         },
     {
+        "id_evento": "v2",
         "titulo": "Vision - Fideles + Lion + Farizano",
         "img": "images/tec3.jpg",
         "lugar": "Finca la Nonnina ",
@@ -81,6 +88,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "v3",
         "titulo": "Vision - Simon Vuarambon (Extended Set) + Doyel",
         "img": "images/tec4.jpg",
         "lugar": "Finca la Nonnina ",
@@ -91,6 +99,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "v4",
         "titulo": "Primavera Vision",
         "img": "images/vision2.jpeg",
         "lugar": "Finca la Nonnina ",
@@ -101,6 +110,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "c2",
         "titulo": "RKT",
         "img": "images/caserio2.jpeg",
         "lugar": "El Caserío",
@@ -111,6 +121,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "c1",
         "titulo": "El Caserío Club",
         "img": "images/caserio.jpeg",
         "lugar": "El Caserío Club",
@@ -121,6 +132,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "w1",
         "titulo": "Wasabi Neuquén",
         "img": "images/wasabi.jpg",
         "lugar": "MOOD",
@@ -131,6 +143,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "r1",
         "titulo": "Modo RKT",
         "img": "images/rkt.jpg",
         "lugar": "Mood",
@@ -141,6 +154,7 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "c2",
         "titulo": "El Caserío Club - DJs Invitados",
         "img": "images/caserio.jpeg",
         "lugar": "El Caserío Club",
@@ -152,6 +166,7 @@
         
     },
     {
+        "id_evento": "r2",
         "titulo": "RKT Night",
         "img": "images/rkt1.jpg",
         "lugar": "MOOD",
