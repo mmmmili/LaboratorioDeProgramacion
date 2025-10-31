@@ -1,8 +1,21 @@
 const param = new URLSearchParams(window.location.search);
-const id = param.get("id");
+const id = param.get("id_evento");
+/*
+Cuando pasemos a NodeJS se usa así
+const eventos = require('./eventos.json');
+*/
+const eventos = [];
+fetch("eventos.json")
+    .then(response => {
+        if(!response.ok) throw new Error("Error!!");
+        return response.json;
+    })
+    .then(data => {
+        this.eventos = data;
+    })
 
-const eventos = eventos.json;
 
+console.log(eventos);
 const evento = eventos[id_evento];
 /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
 if (evento) {
