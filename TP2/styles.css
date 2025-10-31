@@ -295,3 +295,33 @@ footer  p{
     padding-right: 10px;
 }
 
+
+/* LOGIN */
+.input-div{
+    margin:auto;
+    width:300px;
+    font-size: large;
+}
+
+.input{
+    margin:10px;
+    font-size: 22px;
+}
+
+.button-input{
+    font-size: 22px;
+}
+
+.pass-div{
+    margin:auto;
+    width:300px;
+    position: relative;
+}
+
+.fa-eye{
+    position:absolute;
+    top:32%;
+    left: 96%;
+    cursor: pointer;
+}
+/*refs/remotes/origin/main*/

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+joditas</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <h1 class="tituloHeader">+joditas</h1>
+            </a>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li>|</li>
+                <li><a href="">Calendario</a></li>
+                <li>|</li>
+                <li><a href="https://linktr.ee/agustin.ferreyra">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Login</h1>
+        <br>
+        <form>
+            <div class ="input-div" >
+                <input class ="input" type="text" id="Email" name="Email"placeholder="Email" required="required">
+            </div>            
+            <div class ="pass-div">
+                <input class ="input" type="password" id="password" name="pass" placeholder="Contraseña" required="required">
+                <i class="fa-solid fa-eye" onclick="toggler()" id="toggle-password"></i>
+            </div>
+            <div class="input-div">
+                <a href="">¿Olvidaste tu contraseña?</a>
+                <br><br>
+                <button class="button-input" type="submit">
+                    Acceder
+                </button>
+            </div>
+            
+        </form>
+    </main>
+    <footer>
+        <h5>2025</h5>
+        <p>Milagros Ruiz</p>
+        <p>Jeremias Jaleniecki</p>
+        <p> Agustin Ferreyra</p>
+        <p>© Todos los derechos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
