@@ -1,18 +1,7 @@
 const param = new URLSearchParams(window.location.search);
 const id = param.get("id_evento");
-/*
-Cuando pasemos a NodeJS se usa así
+
 const eventos = require('./eventos.json');
-*/
-const eventos = [];
-fetch("eventos.json")
-    .then(response => {
-        if(!response.ok) throw new Error("Error!!");
-        return response.json;
-    })
-    .then(data => {
-        this.eventos = data;
-    })
 
 
 console.log(eventos);
