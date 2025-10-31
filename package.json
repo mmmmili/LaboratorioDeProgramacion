@@ -1,0 +1,20 @@
+{
+  "name": "laboratoriodeprogramacion",
+  "version": "1.0.0",
+  "description": "1. Agustin Ferreyra [FAI-4025] 2. Jeremias Jaleniecki [FAI-3837] 3. Milagros Ruiz [FAI-4564]",
+  "homepage": "https://github.com/mmmmili/LaboratorioDeProgramacion#readme",
+  "bugs": {
+    "url": "https://github.com/mmmmili/LaboratorioDeProgramacion/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmmmili/LaboratorioDeProgramacion.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

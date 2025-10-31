@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel = "icon" type="image/x-icon" href="images/logo.png">
 </head>
 
@@ -31,20 +32,22 @@
     <main>
         <h1>Login</h1>
         <br>
-        <form class ="form">
-            <input class ="input" type="text" id="Email" name="Email"placeholder="Email" required="required">
-            <br>
-            <input class ="input" type="password" id="password" name="pass" placeholder="Contraseña" required="required">
-            <button onclick="toggler(this)" type="button">
-                Show
-            </button>
-            <br>
-            <a href="">¿Olvidaste tu contraseña?</a>
-            <br><br>
+        <form>
+            <div class ="input-div" >
+                <input class ="input" type="text" id="Email" name="Email"placeholder="Email" required="required">
+            </div>            
+            <div class ="pass-div">
+                <input class ="input" type="password" id="password" name="pass" placeholder="Contraseña" required="required">
+                <i class="fa-solid fa-eye" onclick="toggler()" id="toggle-password"></i>
+            </div>
+            <div class="input-div">
+                <a href="">¿Olvidaste tu contraseña?</a>
+                <br><br>
+                <button class="button-input" type="submit">
+                    Acceder
+                </button>
+            </div>
             
-            <button class="button-input" type="submit">
-                Acceder
-            </button>
         </form>
     </main>
     <footer>

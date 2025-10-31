@@ -251,10 +251,10 @@ footer  p{
 }
 
 /* LOGIN */
-.form{
-    text-align: center;
+.input-div{
+    margin:auto;
+    width:300px;
     font-size: large;
-    width: auto;
 }
 
 .input{
@@ -264,4 +264,17 @@ footer  p{
 
 .button-input{
     font-size: 22px;
+}
+
+.pass-div{
+    margin:auto;
+    width:300px;
+    position: relative;
+}
+
+.fa-eye{
+    position:absolute;
+    top:32%;
+    left: 96%;
+    cursor: pointer;
 }
