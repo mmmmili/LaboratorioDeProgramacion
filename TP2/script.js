@@ -1,38 +1,68 @@
 const param = new URLSearchParams(window.location.search);
 const id = param.get("id_evento");
 
-const eventos = require('./eventos.json');
+let eventos = [];
+/*
+Esta totalmente roto, no termino de entender que hay que hacer o que falta
+se supone que el evento.json se levanta desde express.js, y que queda accesible
+para fetchearla desde cualquier lado. entonces el fetch como devuelve promesas no se puede 
+acceder desde afuera y se tiene que hacer con un método que se invoca cuando termina de
+cargar el json en memoria local, pero ya definitivamente no entiendo que pasa o por que
 
+suerte debuggeando esto :D
+*/
 
-console.log(eventos);
-const evento = eventos[id_evento];
-/* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
-if (evento) {
-    document.getElementById("infoevento").innerHTML = `        
-        <h1 class = "evento-particular">
-            <p>${evento.titulo}</p>
-        </h1>
-        <div class = "eventosparticulares">
-            <div class = "col1">
-                <img src="${evento.img}"  alt="${evento.titulo}" class="img-eventoGrande">
+fetch('./eventos.json')
+    .then(response => {
+        if (!response.ok) throw new Error('Error cargando JSON');
+        return response.json();
+    })
+    .then(json => {
+        eventos = json;
+        loadedEvents();
+    })
+    .catch (error => console.error(error));
+    
+/*const evento = eventos[id_evento];*/
+
+function loadedEvents(){
+    const evento = eventos.find(obj => obk.id_evento === id);
+        
+    /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
+    if(1){
+        document.getElementById("infoevento").innerHTML = `        
+            <h1 class = "evento-particular">
+                <p>${hola}</p>
+            </h1>
+            `;
+    }
+    if (evento) {
+        document.getElementById("infoevento").innerHTML = `        
+            <h1 class = "evento-particular">
+                <p>${evento.titulo}</p>
+            </h1>
+            <div class = "eventosparticulares">
+                <div class = "col1">
+                    <img src="${evento.img}"  alt="${evento.titulo}" class="img-eventoGrande">
+                </div>
+                <div class = "col2">
+                    <div class = "row1 rect">
+                        <p> Lugar: ${evento.lugar}</a></p>
+                    </div>
+                    <div class = "row2 rect"> 
+                            <p>Apertura: ${evento.apertura} | Cierre: ${evento.cierre}</p>
+                    </div>
+                    <div class = "row3 rect"> 
+                            <a href="${evento.contacto}" target="_blank">Contacto</a>
+                    </div>
+                    <div class = "row4 ">
+                        <iframe class = "rect iframe" src=${evento.url} width = "100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                <div>
             </div>
-            <div class = "col2">
-                <div class = "row1 rect">
-                    <p> Lugar: ${evento.lugar}</a></p>
-                </div>
-                <div class = "row2 rect"> 
-                        <p>Apertura: ${evento.apertura} | Cierre: ${evento.cierre}</p>
-                </div>
-                <div class = "row3 rect"> 
-                        <a href="${evento.contacto}" target="_blank">Contacto</a>
-                </div>
-                <div class = "row4 ">
-                    <iframe class = "rect iframe" src=${evento.url} width = "100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            <div>
-        </div>
-    `;
-    document.title = evento.titulo;
+        `;
+        /*document.title = evento.titulo;*/   
+    }
 }
 
 
