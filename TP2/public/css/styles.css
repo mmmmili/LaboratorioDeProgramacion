@@ -323,4 +323,11 @@ footer  p{
     left: 96%;
     cursor: pointer;
 }
+
+.fa-eye-slash{
+    position:absolute;
+    top:32%;
+    left: 96%;
+    cursor: pointer;
+}
 /*refs/remotes/origin/main*/

@@ -50,7 +50,6 @@ function loadedEvents(){
     }
 }
 
-
 const inputCiudad = document.getElementById("input-ciudad"); // agarro el input
 const resultados = document.getElementById("result-busqueda"); // agarro el ul de resultados
 
@@ -87,9 +86,7 @@ const funcionBusqueda = () => {
 }
 }
 
-
 inputCiudad.addEventListener("input", funcionBusqueda);
-
 
 function removerAcentos(cadena) {
     return cadena
@@ -100,10 +97,7 @@ function removerAcentos(cadena) {
 function toggler(){
     var x = document.getElementById("password");
     (x.type === "password") ? x.type= "text" : x.type = "password";
+    x = document.getElementById("toggle-password");
+    (x.className === "fa-solid fa-eye") ? x.className = "fa-solid fa-eye-slash" : x.className = "fa-solid fa-eye";
 }
 refs/remotes/origin/main
-
-
-
-
-/* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
