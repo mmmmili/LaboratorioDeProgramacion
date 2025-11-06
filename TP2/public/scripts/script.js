@@ -3,17 +3,32 @@ const id = param.get("id_evento");
 
 let eventos = [];
 
-fetch('./eventos.json')
+
+    fetch('http://localhost:4001/eventos/')
     .then(response => {
         if (!response.ok) throw new Error('Error cargando JSON');
         return response.json();
     })
     .then(json => {
-        eventos = json;
+        eventos = json.eventos;
         loadedEvents();
     })
     .catch (error => console.error(error));
-    
+
+
+function loadEvent(){
+    fetch('http://localhost:4001/eventos/id_evento')
+    .then(response => {
+        if (!response.ok) throw new Error('Error cargando JSON');
+        return response.json();
+    })
+    .then(json => {
+        evento.find()
+        loadedEvents();
+    })
+    .catch (error => console.error(error));
+}
+
 /*const evento = eventos[id_evento];*/
 
 function loadedEvents(){
