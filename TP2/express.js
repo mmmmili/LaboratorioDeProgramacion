@@ -23,6 +23,10 @@ app.get("/login.html", (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'login.html'));
 });
 
+app.post("", (req, res) =>{
+  req.body();
+});
+
 app.listen(port, () => {
   console.log("Ejemplo aaa");
 });
