@@ -1,7 +1,7 @@
 [ {
         "id_evento": "1",
         "titulo": "Kiwi",
-        "img": "images/kiwi.jpeg",
+        "img": "../images/kiwi.jpeg",
         "lugar": "Finca la Nonnina",
         "apertura": "00:00hs",
         "cierre": "07:00hs",
@@ -12,7 +12,7 @@
     {
         "id_evento": "2",
         "titulo": "TUKI Halloween Old School",
-        "img": "images/tuki.jpg",
+        "img": "../images/tuki.jpg",
         "lugar": "MOOD ",
         "apertura": "00:30hs",
         "cierre": "06:00hs",
@@ -23,7 +23,7 @@
     {
         "id_evento": "3",
         "titulo": "BRESH",
-        "img": "images/breshita.jpg",
+        "img": "../images/breshita.jpg",
         "lugar": "Espacio Duam ",
         "apertura": "00:30hs",
         "cierre": "06:00hs",
@@ -34,7 +34,7 @@
     {
         "id_evento": "4",
         "titulo": "Summer",
-        "img": "images/cachengue.jpg",
+        "img": "../images/cachengue.jpg",
         "lugar": "Espacio Duam ",
         "apertura": "00:30hs",
         "cierre": "06:00hs",
@@ -45,7 +45,7 @@
     {
         "id_evento": "5",
         "titulo": "Slay",
-        "img": "images/cachengue2.jpg",
+        "img": "../images/cachengue2.jpg",
         "lugar": "TULUM CLUB ",
         "apertura": "00:00hs",
         "cierre": "07:00hs",
@@ -56,7 +56,7 @@
     {
         "id_evento": "6",
         "titulo": "Moritz Hofbauer + Malena Narvay",
-        "img": "images/vision.jpeg",
+        "img": "../images/vision.jpeg",
         "lugar": "Finca la Nonnina",
         "apertura": "23:00hs",
         "cierre": "06:00hs",
@@ -67,7 +67,7 @@
     {
         "id_evento": "7",
         "titulo": "Vision - Kevin Di Serna + Maxi Degrassi",
-        "img": "images/tec2.jpg",
+        "img": "../images/tec2.jpg",
         "lugar": "Finca la Nonnina ",
         "apertura": "00:00hs",
         "cierre": "08:00hs",
@@ -78,7 +78,7 @@
     {
         "id_evento": "8",
         "titulo": "Vision - Fideles + Lion + Farizano",
-        "img": "images/tec3.jpg",
+        "img": "../images/tec3.jpg",
         "lugar": "Finca la Nonnina ",
         "apertura": "00:00hs",
         "cierre": "08:00hs",
@@ -89,7 +89,7 @@
     {
         "id_evento": "9",
         "titulo": "Vision - Simon Vuarambon (Extended Set) + Doyel",
-        "img": "images/tec4.jpg",
+        "img": "../images/tec4.jpg",
         "lugar": "Finca la Nonnina ",
         "apertura": "00:00hs",
         "cierre": "08:00hs",
@@ -111,7 +111,7 @@
     {
         "id_evento": "11",
         "titulo": "RKT",
-        "img": "images/caserio2.jpeg",
+        "img": "../images/caserio2.jpeg",
         "lugar": "El Caserío",
         "apertura": "01:00hs",
         "cierre": "08:00hs",
@@ -122,7 +122,7 @@
     {
         "id_evento": "12",
         "titulo": "El Caserío Club",
-        "img": "images/caserio.jpeg",
+        "img": "../images/caserio.jpeg",
         "lugar": "El Caserío Club",
         "apertura": "01:00hs",
         "cierre": "08:00hs",
@@ -133,7 +133,7 @@
     {
         "id_evento": "13",
         "titulo": "Wasabi Neuquén",
-        "img": "images/wasabi.jpg",
+        "img": "../images/wasabi.jpg",
         "lugar": "MOOD",
         "apertura": "23:00hs",
         "cierre": "06:00hs",
@@ -144,7 +144,7 @@
     {
         "id_evento": "14",
         "titulo": "Modo RKT",
-        "img": "images/rkt.jpg",
+        "img": "../images/rkt.jpg",
         "lugar": "Mood",
         "apertura": "23:00hs",
         "cierre": "06:00hs",
@@ -155,7 +155,7 @@
     {
         "id_evento": "15",
         "titulo": "El Caserío Club - DJs Invitados",
-        "img": "images/caserio.jpeg",
+        "img": "../images/caserio.jpeg",
         "lugar": "El Caserío Club",
         "apertura": "01:00hs",
         "cierre": "08:00hs",
@@ -167,7 +167,7 @@
     {
         "id_evento": "16",
         "titulo": "RKT Night",
-        "img": "images/rkt1.jpg",
+        "img": "../images/rkt1.jpg",
         "lugar": "MOOD",
         "apertura": "19:30hs",
         "cierre": "03:00hs",
