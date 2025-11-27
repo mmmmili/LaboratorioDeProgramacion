@@ -1,49 +1,46 @@
-import {createRoot} from 'react-dom/client'
 
-document.body.innerHTML = <div id = "app"></div>;
+const esPaginaEvento = window.location.pathname.includes("evento.html");
 
-const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world</h1>)
+if (esPaginaEvento) {
+    const param = new URLSearchParams(window.location.search);
+    const id = param.get("id_evento");
+
+    let eventos = [];
+
+    fetch('http://localhost:4001/api/eventos')
+
+        .then(response => {
+            if (!response.ok) throw new Error('Error cargando JSON');
+            return response.json();
+        })
+        .then(json => {
+            eventos = json.eventos;
+            //loadedEvents(); no se q onda esto
+
+        })
+        .catch(error => console.error(error));
 
 
-const param = new URLSearchParams(window.location.search);
-const id = param.get("id_evento");
+    function cargarEvento() {
+        fetch(`http://localhost:4001/api/eventos/${id}`)
+            .then(response => {
+                if (!response.ok) throw new Error("Error cargando JSON");
+                return response.json();
+            })
+            .then(evento => {
+                console.log("Evento cargado:", evento);
+                mostrarEvento(evento);
+            })
+            .catch(err => console.error(err));
+    }
+    /*const evento = eventos[id_evento];*/
 
-let eventos = [];
-    fetch('http://localhost:4001/eventos/')
-    .then(response => {
-        if (!response.ok) throw new Error('Error cargando JSON');
-        return response.json();
-    })
-    .then(json => {
-        eventos = json.eventos;
-        loadedEvents();
-    })
-    .catch (error => console.error(error));
+    function mostrarEvento(evento) {
+        console.log(eventos);
 
-
-function loadEvent(){
-    fetch('http://localhost:4001/eventos/id_evento')
-    .then(response => {
-        if (!response.ok) throw new Error('Error cargando JSON');
-        return response.json();
-    })
-    .then(json => {
-        evento.find()
-        loadedEvents();
-    })
-    .catch (error => console.error(error));
-}
-
-/*const evento = eventos[id_evento];*/
-
-function loadedEvents(){
-    console.log(eventos);
-    const evento = eventos.eventos.find((obj) => obj.id_evento === id);
-    
-    /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
-    if (evento) {
-        document.getElementById("infoevento").innerHTML = `        
+        /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
+        if (evento) {
+            document.getElementById("infoevento").innerHTML = `        
             <h1 class = "evento-particular">
                 <p>${evento.titulo}</p>
             </h1>
@@ -67,14 +64,15 @@ function loadedEvents(){
                 <div>
             </div>
         `;
-        /*document.title = evento.titulo;*/   
+            /*document.title = evento.titulo;*/
+        }
     }
+    cargarEvento();
 }
-
 const inputCiudad = document.getElementById("input-ciudad"); // agarro el input
 const resultados = document.getElementById("result-busqueda"); // agarro el ul de resultados
 
-const funcionBusqueda = () => {
+/*const funcionBusqueda = () => {
     const filtro = inputCiudad.value.toLowerCase(); // a minuscula el input
     resultados.innerHTML = "";
 
@@ -114,11 +112,12 @@ function removerAcentos(cadena) {
       .normalize('NFD') // Descompone los caracteres en base y marca diacrítica
       .replace(/[\u0300-\u036f]/g, ''); // Elimina las marcas diacríticas
 }
+      */
 
-function toggler(){
+function toggler() {
     var x = document.getElementById("password");
-    (x.type === "password") ? x.type= "text" : x.type = "password";
+    (x.type === "password") ? x.type = "text" : x.type = "password";
     x = document.getElementById("toggle-password");
     (x.className === "fa-solid fa-eye") ? x.className = "fa-solid fa-eye-slash" : x.className = "fa-solid fa-eye";
 }
-refs/remotes/origin/main
+//refs/remotes/origin/main

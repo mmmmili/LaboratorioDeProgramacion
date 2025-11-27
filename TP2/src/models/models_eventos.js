@@ -1,5 +1,7 @@
 const fs = require('fs');
-const pathJson = "public/json/eventos.json"
+const path = require('path');
+
+const pathJson = path.join(__dirname, '../../public/json/eventos.json');
 
 function obtenerEventosJson(){
     const archivoEventos = fs.readFileSync(pathJson, 'utf-8');
