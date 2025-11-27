@@ -1,5 +1,4 @@
-{
-    "eventos":[ {
+[ {
         "id_evento": "k1",
         "titulo": "Kiwi",
         "img": "images/kiwi.jpeg",
@@ -175,7 +174,5 @@
         "contacto": "https://instagram.com/moodliveok",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
         "ciudad": "Neuquén"
-    }]
-}
-
-
+    }
+]
