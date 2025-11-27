@@ -21,7 +21,6 @@ router.get("/:id_evento", (req, res) => {
     }else{
         res.status(404).json({message: 'El evento con ID ${id} no fue encontrado'});
     }
-    res.json(evento);
 });
 
 router.get("/index.html", (req, res) => {
