@@ -7,13 +7,13 @@ const path = require('path');
 
 router.use(express.json());
 
-router.get("/api/eventos", (req, res) => {
-    objJson = obtenerEventosJson;
+router.get("/", (req, res) => {
+    objJson = obtenerEventosJson();
     //const data = objJson.eventos.map(obj => obj.img)
     res.json(objJson);
 });
 
-router.get("/api/eventos/:id_evento", (req, res) => {
+router.get("/:id_evento", (req, res) => {
     const id = req.params.id_evento;
     const evento = obtenerEventoJson(id);
     if(evento){
