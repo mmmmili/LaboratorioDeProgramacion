@@ -7,7 +7,7 @@ if (esPaginaEvento) {
 
     let eventos = [];
 
-    fetch('http://localhost:4001/api/eventos')
+    fetch(`http://localhost:4001/api/eventos`)
 
         .then(response => {
             if (!response.ok) throw new Error('Error cargando JSON');
@@ -59,9 +59,9 @@ if (esPaginaEvento) {
                             <a href="${evento.contacto}" target="_blank">Contacto</a>
                     </div>
                     <div class = "row4 ">
-                        <iframe class = "rect iframe" src=${evento.url} width = "100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class = "rect iframe" src="${evento.url}" width = "100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                <div>
+                </div>
             </div>
         `;
             /*document.title = evento.titulo;*/
