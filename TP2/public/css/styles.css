@@ -85,6 +85,74 @@ a {
  */
 /* MAIN */
 
+/*  CARROUSEL  */
+.carrusel-contenedor {
+    position: relative;
+    width: 70%;
+    margin: 4em auto;
+}
+
+.carrusel {
+    display: flex;
+    gap: 1em;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+/*  BOTONES */
+
+.btn-carrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+}
+
+.btn-carrusel:hover {
+    transform: translateY(-50%) scale(1.15);
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.btn-carrusel.izquierda {
+    left: -25px; /* para que sobresalgan un poco */
+}
+
+.btn-carrusel.derecha {
+    right: -25px; 
+}
+
+
+.elemento-carrusel {
+    scroll-snap-align: start;
+    aspect-ratio: 5/3;
+    background-color: white;
+    padding: 1em;
+    border-radius: .5em; 
+    text-align: center;
+    align-content: center;
+}
+
+
+/* carrousel viejo, ¿borrar?*/
 .carrousel{
     width: 100%;
 }
