@@ -149,7 +149,7 @@ a {
 .rect{
     display:flex;
     text-align: center;                 /* alinear el texto*/
-    border: 1px solid #333;           /* esquinas redondeadas */
+    border: 1px solid #ccc;           /* esquinas redondeadas */
     border-radius: 10px;                /* espacio interno */
     padding: 20px;                      /* espacio interno */
     margin-bottom: 10px;                /* separación del resto */
