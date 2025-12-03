@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id_evento", (req, res) => {
-    const id = req.params.id_evento;
+    const id = Number(req.params.id_evento);
     const evento = obtenerEventoJson(id);
     if(evento){
         res.status(200).json(evento);

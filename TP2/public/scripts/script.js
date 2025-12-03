@@ -7,7 +7,7 @@ if (esPaginaEvento) {
 
     let eventos = [];
 
-    fetch(`http://localhost:4001/api/eventos`)
+   fetch(`http://localhost:4001/api/eventos`)
 
         .then(response => {
             if (!response.ok) throw new Error('Error cargando JSON');
@@ -21,6 +21,7 @@ if (esPaginaEvento) {
         .catch(error => console.error(error));
 
 
+    
     function cargarEvento() {
         fetch(`http://localhost:4001/api/eventos/${id}`)
             .then(response => {
@@ -36,7 +37,6 @@ if (esPaginaEvento) {
     /*const evento = eventos[id_evento];*/
 
     function mostrarEvento(evento) {
-        console.log(eventos);
 
         /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
         if (evento) {
