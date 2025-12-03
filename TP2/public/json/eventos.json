@@ -100,7 +100,7 @@
     {
         "id_evento": "10",
         "titulo": "Primavera Vision",
-        "img": "images/vision2.jpeg",
+        "img": "../images/vision2.jpeg",
         "lugar": "Finca la Nonnina ",
         "apertura": "00:00hs",
         "cierre": "08:00hs",

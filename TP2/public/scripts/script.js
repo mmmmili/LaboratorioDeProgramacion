@@ -7,7 +7,7 @@ if (esPaginaEvento) {
 
     let eventos = [];
 
-    fetch('http://localhost:4001/api/eventos')
+    fetch(`http://localhost:4001/api/eventos`)
 
         .then(response => {
             if (!response.ok) throw new Error('Error cargando JSON');
@@ -59,9 +59,9 @@ if (esPaginaEvento) {
                             <a href="${evento.contacto}" target="_blank">Contacto</a>
                     </div>
                     <div class = "row4 ">
-                        <iframe class = "rect iframe" src=${evento.url} width = "100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class = "rect iframe" src="${evento.url}" width = "100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                <div>
+                </div>
             </div>
         `;
             /*document.title = evento.titulo;*/
@@ -71,6 +71,32 @@ if (esPaginaEvento) {
 }
 const inputCiudad = document.getElementById("input-ciudad"); // agarro el input
 const resultados = document.getElementById("result-busqueda"); // agarro el ul de resultados
+
+
+/* para mover los carruseles */
+
+document.querySelectorAll(".carrusel-contenedor").forEach(contenedor => {
+    const carrusel = contenedor.querySelector(".carrusel");
+    const btnIzq = contenedor.querySelector(".izquierda");
+    const btnDer = contenedor.querySelector(".derecha");
+
+    const scrollCantidad = 300; // cuanto se mueve
+
+    btnIzq.addEventListener("click", () => {
+        carrusel.scrollBy({
+            left: -scrollCantidad,
+            behavior: "smooth"
+        });
+    });
+
+    btnDer.addEventListener("click", () => {
+        carrusel.scrollBy({
+            left: scrollCantidad,
+            behavior: "smooth"
+        });
+    });
+});
+
 
 /*const funcionBusqueda = () => {
     const filtro = inputCiudad.value.toLowerCase(); // a minuscula el input
