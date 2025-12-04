@@ -3,13 +3,9 @@ const path = require('path');
 const routersEventos = require('./routers/routers_eventos.js');
 const { obtenerEventosJson, obtenerEventoJson } = require('./models/models_eventos.js');
 const fs = require('fs');
-
 const app = express();
 
 const port = 4001;
-
-
-
 const rootPath = __dirname;
 
 app.use(express.static(path.join(__dirname, "../public")));

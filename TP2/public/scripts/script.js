@@ -15,26 +15,9 @@ if (esPaginaEvento) {
         })
         .then(json => {
             eventos = json.eventos;
-            //loadedEvents(); no se q onda esto
 
         })
         .catch(error => console.error(error));
-
-
-  /*   
-    function cargarEvento() {
-        fetch(`http://localhost:4001/api/eventos/${id}`)
-            .then(response => {
-                if (!response.ok) throw new Error("Error cargando JSON");
-                return response.json();
-            })
-            .then(evento => {
-                console.log("Evento cargado:", evento);
-                mostrarEvento(evento);
-            })
-            .catch(err => console.error(err));
-    } */
-    /*const evento = eventos[id_evento];*/
 
  /*    function mostrarEvento(evento) {
 
@@ -157,20 +140,15 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         });
         
         const data = await res.json();
-
-        if (data.token) {
-            // store JWT in localStorage
-            localStorage.setItem("token", data.token);
-            console.log("Token saved:", data.token);
-
-            // redirect or show message
-            //window.location.href = "/admin.html";
+        console.log(data)
+        window.location.replace('/admin.html');
+        /*if (res.cookies.token) {
+            //window.location.replace('/admin.html');
         } else {
             alert("Credenciales invalidas");
-        }
-
+        }*/
     } catch (err) {
-        console.error("Login error:", err);
+        console.error("Error de login:", err);
     }
 });
 

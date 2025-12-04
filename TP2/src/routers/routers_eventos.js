@@ -2,13 +2,13 @@ const express = require("express");
 const jwt = require('jsonwebtoken');
 const router = express.Router();
 const {obtenerEventosJson, obtenerEventoJson,cargarEventoParticular,cargarEventosPorCat} = require('../models/models_eventos.js');
-
+const cookieParser = require('cookie-parser');
 
 const fs = require("fs");
 const path = require("path");
 
-
 router.use(express.json());
+router.use(cookieParser());
 
 /*router.get("/", (req, res) => {
     objJson = obtenerEventosJson();
@@ -114,27 +114,23 @@ router.post("/login.html", (req, res) =>{
 })
 
 router.get('/admin.html', auth, (req, res) => {
-    res.json({
-        message: "Authorized!",
-        user: req.user
-    });
+    res.sendFile(path.join(__dirname, '../../public/views', 'admin.html'));
 });
 
 function auth(req, res, next) {
-    const header = req.headers.authorization;
-
-    if (!header) {
-        return res.status(401).json({ error: "Missing Authorization header" });
+    //const header = req.headers.authorization;
+    const token = req.cookies.token;
+    if (!token) {
+        return res.status(401).json({ error: "Acceso denegado" });
     }
-
-    const token = header.split(" ")[1]; // "Bearer <token>"
+    //const token = header.split(" ")[1]; // "Bearer <token>"
 
     try {
         const decoded = jwt.verify(token, JWT_SECRET);
         req.user = decoded; 
         next(); 
     } catch (err) {
-        return res.status(403).json({ error: "Invalid or expired token" });
+        return res.status(403).json({ error: "Token invalido o expirado" });
     }
 }
 

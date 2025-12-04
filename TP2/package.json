@@ -19,6 +19,7 @@
     "start": "nodemon src/server.js"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "cookieparser": "^0.1.0",
     "express": "^5.1.0",
     "jsdom": "^27.2.0",
