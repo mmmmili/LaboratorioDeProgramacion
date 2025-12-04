@@ -51,6 +51,7 @@ function cargarEventosPorCat(contenedor, eventos,limite) {
         enlaceEvento.innerHTML = `<img src="${evento.img}" alt="${evento.titulo}" class="img-eventos">`;
         contenedor.appendChild(enlaceEvento);
         enlaceEvento.className = 'elemento-carrusel';
+        enlaceEvento.id = evento.id_evento;
     }
     
 }

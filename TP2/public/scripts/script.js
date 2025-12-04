@@ -1,9 +1,6 @@
 
-const esPaginaEvento = window.location.pathname.includes("evento.html");
+    let eventos;
 
-if (esPaginaEvento) {
-    const param = new URLSearchParams(window.location.search);
-    const id = param.get("id_evento");
 
     let eventos = [];
 
@@ -54,9 +51,95 @@ if (esPaginaEvento) {
 } */
 const inputCiudad = document.getElementById("input-ciudad"); // agarro el input
 const resultados = document.getElementById("result-busqueda"); // agarro el ul de resultados
-
+console.log("input ciudad:", inputCiudad);
+ 
 
 /* para mover los carruseles */
+
+const funcionBusqueda = () => {
+    console.log("buscando...");
+
+    const filtro = inputCiudad.value.toLowerCase(); // a minuscula el input
+    resultados.innerHTML = "";
+
+    if (filtro.trim() != "") {
+        const filtrados = eventos.filter(evento =>
+            removerAcentos(evento.ciudad).toLowerCase().startsWith(removerAcentos(filtro))
+        );
+
+        const ciudadesUnicas = [...new Set(filtrados.map(evento => evento.ciudad))]; //elimino repetidos
+        console.log(ciudadesUnicas);
+
+        ciudadesUnicas.forEach(ciudad => {
+            const li = document.createElement("li");
+            li.textContent = ciudad;
+            li.classList.add("resultado-list");
+            resultados.appendChild(li);
+
+
+            li.addEventListener("click", () => {
+                inputCiudad.value = ciudad;
+                resultados.innerHTML = "";
+
+                eventos.forEach(evento => {
+                    console.log("evento ciudad:", evento.id_evento);
+                    const eventosDoc = document.getElementById(evento.id_evento);
+                    console.log("eventoDoc:", eventosDoc);
+                    if (evento.ciudad === ciudad ) {
+                        eventosDoc.style.display = "block";
+                    } else {
+                        eventosDoc.style.display = "none";
+                    }
+
+                })
+            })
+        });
+    }
+}
+
+
+
+    inputCiudad.addEventListener("click", traerEventos);
+    inputCiudad.addEventListener("input", funcionBusqueda);
+
+
+function removerAcentos(cadena) {
+    return cadena
+      .normalize('NFD') // Descompone los caracteres en base y marca diacrítica
+      .replace(/[\u0300-\u036f]/g, ''); // Elimina las marcas diacríticas
+}
+      
+
+
+let formularioLogin = document.getElementById("loginForm");
+if(formularioLogin!=null){
+    formularioLogin.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("password").value;
+
+    try {
+        const res = await fetch("/login.html", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email, pass })
+        });
+        
+        const data = await res.json();
+        console.log(data)
+        window.location.replace('/admin.html');
+        /*if (res.cookies.token) {
+            //window.location.replace('/admin.html');
+        } else {
+            alert("Credenciales invalidas");
+        }*/
+    } catch (err) {
+        console.error("Error de login:", err);
+    }
+});}
 
 document.querySelectorAll(".carrusel-contenedor").forEach(contenedor => {
     const carrusel = contenedor.querySelector(".carrusel");
@@ -85,46 +168,58 @@ document.querySelectorAll(".carrusel-contenedor").forEach(contenedor => {
     const filtro = inputCiudad.value.toLowerCase(); // a minuscula el input
     resultados.innerHTML = "";
 
-    if(filtro.trim() != "") {
-    const filtrados = Object.values(eventos).filter(evento =>
-        removerAcentos(evento.ciudad).toLowerCase().startsWith(removerAcentos(filtro))
-    );
+    if (filtro.trim() != "") {
+        const filtrados = eventos.filter(evento =>
+            removerAcentos(evento.ciudad).toLowerCase().startsWith(removerAcentos(filtro))
+        );
 
-    const ciudadesUnicas = [...new Set(filtrados.map(evento => evento.ciudad))]; //elimino repetidos
+        const ciudadesUnicas = [...new Set(filtrados.map(evento => evento.ciudad))]; //elimino repetidos
+        console.log(ciudadesUnicas);
 
-    ciudadesUnicas.forEach(ciudad => {
-        const li = document.createElement("li");
-        li.textContent = ciudad;
-        li.classList.add("resultado-list");
-        resultados.appendChild(li);
-    });
+        ciudadesUnicas.forEach(ciudad => {
+            const li = document.createElement("li");
+            li.textContent = ciudad;
+            li.classList.add("resultado-list");
+            resultados.appendChild(li);
 
-    li.addEventListener("click",() => {
-        inputCiudad.value = ciudad;
-        resultados.innerHTML = "";
 
-        eventos.forEach(evento => {
-            if(evento.ciudad === ciudad) {
-                evento.style.display = "block";
-            } else {
-                evento.style.display = "none";
-            }
-        })
-    })
+            li.addEventListener("click", () => {
+                inputCiudad.value = ciudad;
+                resultados.innerHTML = "";
+
+                eventos.forEach(evento => {
+                    console.log("evento ciudad:", evento.id_evento);
+                    const eventosDoc = document.getElementById(evento.id_evento);
+                    console.log("eventoDoc:", eventosDoc);
+                    if (evento.ciudad === ciudad ) {
+                        eventosDoc.style.display = "block";
+                    } else {
+                        eventosDoc.style.display = "none";
+                    }
+
+                })
+            })
+        });
+    }
 }
-}
 
-inputCiudad.addEventListener("input", funcionBusqueda);
+
+
+    inputCiudad.addEventListener("click", traerEventos);
+    inputCiudad.addEventListener("input", funcionBusqueda);
+
 
 function removerAcentos(cadena) {
     return cadena
       .normalize('NFD') // Descompone los caracteres en base y marca diacrítica
       .replace(/[\u0300-\u036f]/g, ''); // Elimina las marcas diacríticas
 }
-      */
-}
+      
 
-document.getElementById("loginForm").addEventListener("submit", async (e) => {
+
+let formularioLogin = document.getElementById("loginForm");
+if(formularioLogin!=null){
+    formularioLogin.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const email = document.getElementById("email").value;
@@ -150,7 +245,31 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     } catch (err) {
         console.error("Error de login:", err);
     }
+});}
+
+document.querySelectorAll(".carrusel-contenedor").forEach(contenedor => {
+    const carrusel = contenedor.querySelector(".carrusel");
+    const btnIzq = contenedor.querySelector(".izquierda");
+    const btnDer = contenedor.querySelector(".derecha");
+
+    const scrollCantidad = 300; // cuanto se mueve
+
+    btnIzq.addEventListener("click", () => {
+        carrusel.scrollBy({
+            left: -scrollCantidad,
+            behavior: "smooth"
+        });
+    });
+
+    btnDer.addEventListener("click", () => {
+        carrusel.scrollBy({
+            left: scrollCantidad,
+            behavior: "smooth"
+        });
+    });
 });
+
+
 
 
 function toggler() {
