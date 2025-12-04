@@ -46,7 +46,6 @@ function cargarEventosPorCat(contenedor, eventos,limite) {
    
     for (let i = 0; i < Math.min(eventos.length, limite); i++) {
         const evento = eventos[i];
-        console.log(evento);
         const enlaceEvento = contenedor.ownerDocument.createElement('a');
         enlaceEvento.href = `/eventos/${evento.id_evento}`;
         enlaceEvento.innerHTML = `<img src="${evento.img}" alt="${evento.titulo}" class="img-eventos">`;
