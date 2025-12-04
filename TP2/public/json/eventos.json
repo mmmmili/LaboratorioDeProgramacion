@@ -1,4 +1,5 @@
-[ {
+[
+    {
         "id_evento": "1",
         "titulo": "Kiwi",
         "img": "../images/kiwi.jpeg",
@@ -54,6 +55,105 @@
         "ciudad": "Neuquén"
     },
     {
+        "id_evento": "17",
+        "titulo": "Cachembre",
+        "img": "../images/cachengue6.png",
+        "lugar": "Saavedra Bar ",
+        "apertura": "22:00hs",
+        "cierre": "06:00hs",
+        "contacto": "https://www.instagram.com/ds__eventos/",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13145.058910977452!2d-58.50173180453199!3d-34.54685209999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa2236df3f3%3A0x18e83953f81e973d!2sAribau!5e0!3m2!1ses-419!2sar!4v1764806896540!5m2!1ses-419!2sar",
+        "ciudad": "Buenos Aires"
+    },
+    {
+        "id_evento": "18",
+        "titulo": "Buenos Aires Cumbia",
+        "img": "../images/cachengue7.png",
+        "lugar": "Madero Boardwalk",
+        "apertura": "22:00hs",
+        "cierre": "06:00hs",
+        "contacto": "https://www.instagram.com/madero.boardwalk/",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
+        "ciudad": "Buenos Aires"
+    },
+    {
+        "id_evento": "19",
+        "titulo": "Pub DJ Lauty Toth",
+        "img": "../images/cachengue8.png",
+        "lugar": "Signo's Pub ",
+        "apertura": "23:00hs",
+        "cierre": "07:00hs",
+        "contacto": "https://www.instagram.com/signos.pub/",
+        "url": "<https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8420.577217290554!2d-55.86723353796146!3d-27.456286861315828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457b9d0634da4b1%3A0x5a2a43be58020!2sSignos%20Music%20Pub!5e0!3m2!1ses!2sar!4v1764807273688!5m2!1ses!2sar",
+        "ciudad": "Misiones"
+    },
+    {
+        "id_evento": "20",
+        "titulo": "Cachenge Miramar Fest",
+        "img": "../images/cachengue13.png",
+        "lugar": "Signo's Pub ",
+        "apertura": "23:00hs",
+        "cierre": "07:00hs",
+        "contacto": "https://www.instagram.com/signos.pub/",
+        "url": "<https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8420.577217290554!2d-55.86723353796146!3d-27.456286861315828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457b9d0634da4b1%3A0x5a2a43be58020!2sSignos%20Music%20Pub!5e0!3m2!1ses!2sar!4v1764807273688!5m2!1ses!2sar",
+        "ciudad": "Misiones"
+    },
+    {
+        "id_evento": "21",
+        "titulo": "R.I.P Cachengue El Shura",
+        "img": "../images/cachengue9.png",
+        "lugar": "Infinity ",
+        "apertura": "23:00hs",
+        "cierre": "07:00hs",
+        "contacto": "https://www.instagram.com/infinity.jujuy/",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5147.384638560544!2d-65.27324906518065!3d-24.18047850270901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b05eda4c37e29%3A0xfda280c6af96cbb1!2sPasquini%20L%C3%B3pez%20111%2C%20Y4600%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1764807727684!5m2!1ses!2sar",
+        "ciudad": "Jujuy"
+    },
+    {
+        "id_evento": "22",
+        "titulo": "I Love Cachengue",
+        "img": "../images/cachengue10.png",
+        "lugar": "Infinity ",
+        "apertura": "23:00hs",
+        "cierre": "07:00hs",
+        "contacto": "https://www.instagram.com/madero.boardwalk/",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
+        "ciudad": "Buenos Aires"
+    },
+    {
+        "id_evento": "23",
+        "titulo": "Trampa Cachengue",
+        "img": "../images/cachengue11.png",
+        "lugar": "Infinity ",
+        "apertura": "23:00hs",
+        "cierre": "07:00hs",
+        "contacto": "https://www.instagram.com/madero.boardwalk/",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
+        "ciudad": "Buenos Aires"
+    },
+    {
+        "id_evento": "24",
+        "titulo": "Candy Cachengue",
+        "img": "../images/cachengue14.png",
+        "lugar": "Infinity ",
+        "apertura": "23:00hs",
+        "cierre": "07:00hs",
+        "contacto": "https://www.instagram.com/madero.boardwalk/",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
+        "ciudad": "Buenos Aires"
+    },
+    {
+        "id_evento": "25",
+        "titulo": "El Padilla Cachengue",
+        "img": "../images/cachengue15.png",
+        "lugar": "Infinity ",
+        "apertura": "23:00hs",
+        "cierre": "07:00hs",
+        "contacto": "https://www.instagram.com/madero.boardwalk/",
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
+        "ciudad": "Buenos Aires"
+    },
+    {
         "id_evento": "6",
         "titulo": "Moritz Hofbauer + Malena Narvay",
         "img": "../images/vision.jpeg",
@@ -74,7 +174,7 @@
         "contacto": "https://instagram.com/vision.festival",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
         "ciudad": "Neuquén"
-        },
+    },
     {
         "id_evento": "8",
         "titulo": "Vision - Fideles + Lion + Farizano",
@@ -162,7 +262,6 @@
         "contacto": "https://instagram.com/elcaserioclub",
         "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6205.27475851252!2d-68.0529558!3d-38.9551118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462cc3157%3A0x51e8005c84277f11!2sIndependencia%20428%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1760044851950!5m2!1ses!2sar",
         "ciudad": "Neuquén"
-        
     },
     {
         "id_evento": "16",
