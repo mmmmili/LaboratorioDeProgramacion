@@ -21,7 +21,7 @@ if (esPaginaEvento) {
         .catch(error => console.error(error));
 
 
-    
+  /*   
     function cargarEvento() {
         fetch(`http://localhost:4001/api/eventos/${id}`)
             .then(response => {
@@ -33,12 +33,12 @@ if (esPaginaEvento) {
                 mostrarEvento(evento);
             })
             .catch(err => console.error(err));
-    }
+    } */
     /*const evento = eventos[id_evento];*/
 
-    function mostrarEvento(evento) {
+ /*    function mostrarEvento(evento) {
 
-        /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
+        el innerHTML rellena el div que tiene ese id con lo que sigue dsp 
         if (!evento) {
             document.getElementById("infoevento").innerHTML = `        
             <h1 class = "evento-particular">
@@ -64,11 +64,11 @@ if (esPaginaEvento) {
                 </div>
             </div>
         `
-            /*document.title = evento.titulo;*/
+            document.title = evento.titulo;
         }
     }
     cargarEvento();
-}
+} */
 const inputCiudad = document.getElementById("input-ciudad"); // agarro el input
 const resultados = document.getElementById("result-busqueda"); // agarro el ul de resultados
 
@@ -145,5 +145,4 @@ function toggler() {
     (x.type === "password") ? x.type = "text" : x.type = "password";
     x = document.getElementById("toggle-password");
     (x.className === "fa-solid fa-eye") ? x.className = "fa-solid fa-eye-slash" : x.className = "fa-solid fa-eye";
-}
-//refs/remotes/origin/main
+}}

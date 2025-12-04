@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const {obtenerEventosJson, obtenerEventoJson,cargarEventoParticular} = require('../models/models_eventos.js');
+const {obtenerEventosJson, obtenerEventoJson,cargarEventoParticular,cargarEventosPorCat} = require('../models/models_eventos.js');
 
 
 const fs = require("fs");
@@ -27,7 +27,18 @@ router.get("/index.html", async (req, res) => {
     const doc = dom.window.document;
 
     const contenedorCachengue = doc.getElementById('eventos-cachengue');
+    const contenedorTecno = doc.getElementById('eventos-tecno');
+    const contenedorRkt = doc.getElementById('eventos-rkt');
 
+    cantEventosPorCat = 5;
+
+    cargarEventosPorCat(contenedorTecno, eventos.filter(evento => evento.categoria === 'tecno'), cantEventosPorCat);
+    cargarEventosPorCat(contenedorRkt, eventos.filter(evento => evento.categoria === 'rkt'),cantEventosPorCat);
+    cargarEventosPorCat(contenedorCachengue, eventos.filter(evento => evento.categoria === 'cachengue'), cantEventosPorCat);
+
+
+    
+    res.send(dom.serialize());
 });
 
 router.get("/evento.html", (req, res) => {
@@ -45,7 +56,6 @@ router.get("/eventos/:id", async (req, res) => {
   const doc = dom.window.document;
 
   cargarEventoParticular(doc.getElementById('infoevento'), evento);
-
 
   res.send(dom.serialize());
 

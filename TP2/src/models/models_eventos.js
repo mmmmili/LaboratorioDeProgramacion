@@ -3,20 +3,21 @@ const path = require('path');
 
 const pathJson = path.join(__dirname, '../../public/json/eventos.json');
 
-function obtenerEventosJson(){
+function obtenerEventosJson() {
     const archivoEventos = fs.readFileSync(pathJson, 'utf-8');
     const eventosJson = JSON.parse(archivoEventos);
     return eventosJson;
 }
 
-function obtenerEventoJson(id){
+function obtenerEventoJson(id) {
     const archivoEventos = fs.readFileSync(pathJson, 'utf-8');
     const eventosJson = JSON.parse(archivoEventos);
-    return eventosJson.find(evento => evento.id_evento == id );
+    return eventosJson.find(evento => evento.id_evento == id);
 }
 
-function cargarEventoParticular(contenedor, evento){
-    contenedor.innerHTML = `  <h1 class = "evento-particular">
+function cargarEventoParticular(contenedor, evento) {
+    contenedor.innerHTML = ` 
+             <h1 class = "evento-particular">
                 <p>${evento.titulo}</p>
             </h1>
             <div class = "eventosparticulares">
@@ -41,4 +42,19 @@ function cargarEventoParticular(contenedor, evento){
 
 }
 
-module.exports = {obtenerEventoJson, obtenerEventosJson,cargarEventoParticular};
+function cargarEventosPorCat(contenedor, eventos,limite) {
+    console.log(eventos);
+    
+    const enlaceEvento = contenedor.ownerDocument.createElement('a');
+
+    for (let i = 0; i < Math.min(eventos.length, limite); i++) {
+        const evento = eventos[i];
+        console.log(evento);
+        enlaceEvento.href = `/eventos/${evento.id_evento}`;
+        enlaceEvento.innerHTML = `<img src="${evento.img}" alt="${evento.titulo}" class="img-eventos">`;
+        contenedor.appendChild(enlaceEvento);
+        enlaceEvento.className = 'elemento-carrusel';
+    }
+}
+
+module.exports = { obtenerEventoJson, obtenerEventosJson, cargarEventoParticular, cargarEventosPorCat };
