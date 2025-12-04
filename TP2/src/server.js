@@ -14,6 +14,7 @@ const rootPath = __dirname;
 
 app.use(express.static(path.join(__dirname, "../public")));
 app.use(express.static(path.join(__dirname, '../public/images')));
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/", routersEventos);
 

@@ -7,7 +7,7 @@ if (esPaginaEvento) {
 
     let eventos = [];
 
-   fetch(`http://localhost:4001/api/eventos`)
+    fetch(`http://localhost:4001/api/eventos`)
 
         .then(response => {
             if (!response.ok) throw new Error('Error cargando JSON');
@@ -139,10 +139,45 @@ function removerAcentos(cadena) {
       .replace(/[\u0300-\u036f]/g, ''); // Elimina las marcas diacríticas
 }
       */
+}
+
+document.getElementById("loginForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("password").value;
+
+    try {
+        const res = await fetch("/login.html", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email, pass })
+        });
+        
+        const data = await res.json();
+
+        if (data.token) {
+            // store JWT in localStorage
+            localStorage.setItem("token", data.token);
+            console.log("Token saved:", data.token);
+
+            // redirect or show message
+            //window.location.href = "/admin.html";
+        } else {
+            alert("Credenciales invalidas");
+        }
+
+    } catch (err) {
+        console.error("Login error:", err);
+    }
+});
+
 
 function toggler() {
     var x = document.getElementById("password");
     (x.type === "password") ? x.type = "text" : x.type = "password";
     x = document.getElementById("toggle-password");
     (x.className === "fa-solid fa-eye") ? x.className = "fa-solid fa-eye-slash" : x.className = "fa-solid fa-eye";
-}}
+}
