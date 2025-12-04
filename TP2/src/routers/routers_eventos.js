@@ -39,6 +39,11 @@ router.get("/", async (req, res) => {
     res.send(dom.serialize());
 });
 
+router.get("/eventos", async (req, res) => {
+    const eventos = obtenerEventosJson();
+    res.json(eventos);
+});
+
 
 router.get("/index.html", async (req, res) => {
     //es.sendFile(path.join(__dirname, '../../public/views', 'index.html'));
