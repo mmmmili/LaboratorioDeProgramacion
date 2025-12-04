@@ -39,7 +39,7 @@ if (esPaginaEvento) {
     function mostrarEvento(evento) {
 
         /* el innerHTML rellena el div que tiene ese id con lo que sigue dsp */
-        if (evento) {
+        if (!evento) {
             document.getElementById("infoevento").innerHTML = `        
             <h1 class = "evento-particular">
                 <p>${evento.titulo}</p>
@@ -63,7 +63,7 @@ if (esPaginaEvento) {
                     </div>
                 </div>
             </div>
-        `;
+        `
             /*document.title = evento.titulo;*/
         }
     }
