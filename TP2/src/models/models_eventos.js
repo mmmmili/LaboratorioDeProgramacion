@@ -43,18 +43,17 @@ function cargarEventoParticular(contenedor, evento) {
 }
 
 function cargarEventosPorCat(contenedor, eventos,limite) {
-    console.log(eventos);
-    
-    const enlaceEvento = contenedor.ownerDocument.createElement('a');
-
+   
     for (let i = 0; i < Math.min(eventos.length, limite); i++) {
         const evento = eventos[i];
         console.log(evento);
+        const enlaceEvento = contenedor.ownerDocument.createElement('a');
         enlaceEvento.href = `/eventos/${evento.id_evento}`;
         enlaceEvento.innerHTML = `<img src="${evento.img}" alt="${evento.titulo}" class="img-eventos">`;
         contenedor.appendChild(enlaceEvento);
         enlaceEvento.className = 'elemento-carrusel';
     }
+    
 }
 
 module.exports = { obtenerEventoJson, obtenerEventosJson, cargarEventoParticular, cargarEventosPorCat };

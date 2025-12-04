@@ -8,7 +8,8 @@
         "cierre": "07:00hs",
         "contacto": "https://www.instagram.com/fiesta_kiwi/",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "cachengue"
     },
     {
         "id_evento": "2",
@@ -19,7 +20,8 @@
         "cierre": "06:00hs",
         "contacto": "https://instagram.com/moodliveok",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "3",
@@ -30,7 +32,8 @@
         "cierre": "06:00hs",
         "contacto": "https://instagram.com/bresh",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.674307862607!2d-68.1380886!3d-38.9542683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333579b9b721%3A0xb25a8725a0874a24!2sEspacio%20Duam!5e0!3m2!1ses!2sar!4v1760044955380!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "4",
@@ -41,7 +44,8 @@
         "cierre": "06:00hs",
         "contacto": "https://instagram.com/summerfest",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.674307862607!2d-68.1380886!3d-38.9542683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a333579b9b721%3A0xb25a8725a0874a24!2sEspacio%20Duam!5e0!3m2!1ses!2sar!4v1760044955380!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "5",
@@ -52,7 +56,8 @@
         "cierre": "07:00hs",
         "contacto": "https://instagram.com/tulumbarok",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.8704538165!2d-68.06197209999999!3d-38.949787799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a3300645c25d1%3A0x4879de12bb99adb0!2stulum!5e0!3m2!1ses!2sar!4v1760045029466!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "17",
@@ -63,7 +68,8 @@
         "cierre": "06:00hs",
         "contacto": "https://www.instagram.com/ds__eventos/",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13145.058910977452!2d-58.50173180453199!3d-34.54685209999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa2236df3f3%3A0x18e83953f81e973d!2sAribau!5e0!3m2!1ses-419!2sar!4v1764806896540!5m2!1ses-419!2sar",
-        "ciudad": "Buenos Aires"
+        "ciudad": "Buenos Aires",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "18",
@@ -74,7 +80,8 @@
         "cierre": "06:00hs",
         "contacto": "https://www.instagram.com/madero.boardwalk/",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
-        "ciudad": "Buenos Aires"
+        "ciudad": "Buenos Aires",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "19",
@@ -85,7 +92,8 @@
         "cierre": "07:00hs",
         "contacto": "https://www.instagram.com/signos.pub/",
         "url": "<https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8420.577217290554!2d-55.86723353796146!3d-27.456286861315828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457b9d0634da4b1%3A0x5a2a43be58020!2sSignos%20Music%20Pub!5e0!3m2!1ses!2sar!4v1764807273688!5m2!1ses!2sar",
-        "ciudad": "Misiones"
+        "ciudad": "Misiones",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "20",
@@ -96,7 +104,8 @@
         "cierre": "07:00hs",
         "contacto": "https://www.instagram.com/signos.pub/",
         "url": "<https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8420.577217290554!2d-55.86723353796146!3d-27.456286861315828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457b9d0634da4b1%3A0x5a2a43be58020!2sSignos%20Music%20Pub!5e0!3m2!1ses!2sar!4v1764807273688!5m2!1ses!2sar",
-        "ciudad": "Misiones"
+        "ciudad": "Misiones",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "21",
@@ -118,7 +127,8 @@
         "cierre": "07:00hs",
         "contacto": "https://www.instagram.com/madero.boardwalk/",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
-        "ciudad": "Buenos Aires"
+        "ciudad": "Buenos Aires",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "23",
@@ -129,7 +139,8 @@
         "cierre": "07:00hs",
         "contacto": "https://www.instagram.com/madero.boardwalk/",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
-        "ciudad": "Buenos Aires"
+        "ciudad": "Buenos Aires",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "24",
@@ -140,7 +151,8 @@
         "cierre": "07:00hs",
         "contacto": "https://www.instagram.com/madero.boardwalk/",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
-        "ciudad": "Buenos Aires"
+        "ciudad": "Buenos Aires",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "25",
@@ -151,7 +163,8 @@
         "cierre": "07:00hs",
         "contacto": "https://www.instagram.com/madero.boardwalk/",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2424293044132!2d-58.36749182348344!3d-34.598030757199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335dda86c2db1%3A0xbdb3adc93c1fa645!2sMadero%20Boardwalk!5e0!3m2!1ses!2sar!4v1764807099230!5m2!1ses!2sar",
-        "ciudad": "Buenos Aires"
+        "ciudad": "Buenos Aires",
+         "categoria": "cachengue"
     },
     {
         "id_evento": "6",
@@ -162,7 +175,8 @@
         "cierre": "06:00hs",
         "contacto": "https://instagram.com/vision.festival",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+         "categoria": "tecno"
     },
     {
         "id_evento": "7",
@@ -173,7 +187,8 @@
         "cierre": "08:00hs",
         "contacto": "https://instagram.com/vision.festival",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "tecno"
     },
     {
         "id_evento": "8",
@@ -195,7 +210,8 @@
         "cierre": "08:00hs",
         "contacto": "https://instagram.com/vision.festival",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "tecno"
     },
     {
         "id_evento": "10",
@@ -206,7 +222,8 @@
         "cierre": "08:00hs",
         "contacto": "https://instagram.com/vision.festival",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.156123862045!2d-68.08900098916011!3d-38.954948799999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462a98bef%3A0xb9170f526e01c4d1!2sLA%20NONNINA%20Espacio%20de%20Eventos!5e0!3m2!1ses!2sar!4v1759432761341!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "tecno"
     },
     {
         "id_evento": "11",
@@ -217,7 +234,8 @@
         "cierre": "08:00hs",
         "contacto": "https://instagram.com/rktfiesta",
         "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6205.27475851252!2d-68.0529558!3d-38.9551118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462cc3157%3A0x51e8005c84277f11!2sIndependencia%20428%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1760044851950!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "tecno"
     },
     {
         "id_evento": "12",
@@ -228,7 +246,8 @@
         "cierre": "08:00hs",
         "contacto": "https://instagram.com/elcaserioclub",
         "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6205.27475851252!2d-68.0529558!3d-38.9551118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462cc3157%3A0x51e8005c84277f11!2sIndependencia%20428%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1760044851950!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "rkt"
     },
     {
         "id_evento": "13",
@@ -239,7 +258,8 @@
         "cierre": "06:00hs",
         "contacto": "https://instagram.com/moodliveok",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "rkt"
     },
     {
         "id_evento": "14",
@@ -250,7 +270,8 @@
         "cierre": "06:00hs",
         "contacto": "https://instagram.com/modorkt",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "rkt"
     },
     {
         "id_evento": "15",
@@ -261,7 +282,8 @@
         "cierre": "08:00hs",
         "contacto": "https://instagram.com/elcaserioclub",
         "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6205.27475851252!2d-68.0529558!3d-38.9551118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d462cc3157%3A0x51e8005c84277f11!2sIndependencia%20428%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1760044851950!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "rkt"
     },
     {
         "id_evento": "16",
@@ -272,6 +294,7 @@
         "cierre": "03:00hs",
         "contacto": "https://instagram.com/moodliveok",
         "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.790159065663!2d-68.0583724!3d-38.951622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1760044539504!5m2!1ses!2sar",
-        "ciudad": "Neuquén"
+        "ciudad": "Neuquén",
+        "categoria": "rkt"
     }
 ]
