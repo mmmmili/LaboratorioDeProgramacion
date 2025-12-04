@@ -1,7 +1,3 @@
-
-    let eventos;
-
-
     let eventos = [];
 
     fetch(`http://localhost:4001/api/eventos`)
@@ -98,10 +94,12 @@ const funcionBusqueda = () => {
 }
 
 
-
-    inputCiudad.addEventListener("click", traerEventos);
+if(inputCiudad!=null) {
+     inputCiudad.addEventListener("click", traerEventos);
     inputCiudad.addEventListener("input", funcionBusqueda);
 
+}
+   
 
 function removerAcentos(cadena) {
     return cadena
@@ -139,7 +137,9 @@ if(formularioLogin!=null){
     } catch (err) {
         console.error("Error de login:", err);
     }
-});}
+    });
+}
+
 
 document.querySelectorAll(".carrusel-contenedor").forEach(contenedor => {
     const carrusel = contenedor.querySelector(".carrusel");
@@ -241,11 +241,12 @@ if(formularioLogin!=null){
             //window.location.replace('/admin.html');
         } else {
             alert("Credenciales invalidas");
-        }*/
+        }
     } catch (err) {
         console.error("Error de login:", err);
     }
 });}
+*/
 
 document.querySelectorAll(".carrusel-contenedor").forEach(contenedor => {
     const carrusel = contenedor.querySelector(".carrusel");
@@ -268,9 +269,6 @@ document.querySelectorAll(".carrusel-contenedor").forEach(contenedor => {
         });
     });
 });
-
-
-
 
 function toggler() {
     var x = document.getElementById("password");
