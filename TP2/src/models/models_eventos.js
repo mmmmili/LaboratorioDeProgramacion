@@ -2,15 +2,15 @@ const fs = require('fs');
 const path = require('path');
 
 const pathJson = path.join(__dirname, '../../public/json/eventos.json');
+const archivoEventos = fs.readFileSync(pathJson, 'utf-8');
 
 function obtenerEventosJson() {
-    const archivoEventos = fs.readFileSync(pathJson, 'utf-8');
     const eventosJson = JSON.parse(archivoEventos);
     return eventosJson;
 }
 
 function obtenerEventoJson(id) {
-    const archivoEventos = fs.readFileSync(pathJson, 'utf-8');
+
     const eventosJson = JSON.parse(archivoEventos);
     return eventosJson.find(evento => evento.id_evento == id);
 }
